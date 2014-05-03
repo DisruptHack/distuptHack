@@ -23,8 +23,9 @@
 		8CF7BFA9191584F50058F100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFA7191584F50058F100 /* InfoPlist.strings */; };
 		8CF7BFAB191584F50058F100 /* DisruptNYCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */; };
 		8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFB51915879E0058F100 /* MerchantBidCell.m */; };
-		8CF7BFBC191596970058F100 /* RequestForOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFBB191596970058F100 /* RequestForOfferViewController.m */; };
-		8CF7BFBE191599C60058F100 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBD191599C60058F100 /* MapKit.framework */; };
+		8CF7BFBC191596970058F100 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		8CF7BFBE191599C60058F100 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		8CF7BFC01915A14D0058F100 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +62,16 @@
 		8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisruptNYCTests.m; sourceTree = "<group>"; };
 		8CF7BFB41915879E0058F100 /* MerchantBidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantBidCell.h; sourceTree = "<group>"; };
 		8CF7BFB51915879E0058F100 /* MerchantBidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantBidCell.m; sourceTree = "<group>"; };
-		8CF7BFBA191596970058F100 /* RequestForOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestForOfferViewController.h; sourceTree = "<group>"; };
-		8CF7BFBB191596970058F100 /* RequestForOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestForOfferViewController.m; sourceTree = "<group>"; };
-		8CF7BFBD191599C60058F100 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8CF7BFBF1915A14D0058F100 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B07337761915896B006FBFB9 /* IncomingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingRequest.h; sourceTree = "<group>"; };
+		B07337771915896B006FBFB9 /* IncomingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingRequest.m; sourceTree = "<group>"; };
+		B073377919158E89006FBFB9 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		B073377A19158E89006FBFB9 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		B073377C19159242006FBFB9 /* OutgoingOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutgoingOffer.h; sourceTree = "<group>"; };
+		B073377D19159242006FBFB9 /* OutgoingOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutgoingOffer.m; sourceTree = "<group>"; };
+		B073377F191596F3006FBFB9 /* MerchantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantViewController.h; sourceTree = "<group>"; };
+		B0733780191596F3006FBFB9 /* MerchantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantViewController.m; sourceTree = "<group>"; };
+		B0733781191596F3006FBFB9 /* MerchantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7BFBE191599C60058F100 /* MapKit.framework in Frameworks */,
+				8CF7BFC01915A14D0058F100 /* MapKit.framework in Frameworks */,
+				8CF7BFBE191599C60058F100 /* (null) in Frameworks */,
 				8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */,
 				8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */,
 				8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */,
@@ -113,7 +122,7 @@
 		8CF7BF7B191584F50058F100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8CF7BFBD191599C60058F100 /* MapKit.framework */,
+				8CF7BFBF1915A14D0058F100 /* MapKit.framework */,
 				8CF7BF7C191584F50058F100 /* Foundation.framework */,
 				8CF7BF7E191584F50058F100 /* CoreGraphics.framework */,
 				8CF7BF80191584F50058F100 /* UIKit.framework */,
@@ -128,10 +137,9 @@
 				8CF7BF8B191584F50058F100 /* AppDelegate.h */,
 				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CF7BF8E191584F50058F100 /* Main.storyboard */,
+				B073376F191588BD006FBFB9 /* Merchant */,
 				8CF7BFB41915879E0058F100 /* MerchantBidCell.h */,
 				8CF7BFB51915879E0058F100 /* MerchantBidCell.m */,
-				8CF7BFBA191596970058F100 /* RequestForOfferViewController.h */,
-				8CF7BFBB191596970058F100 /* RequestForOfferViewController.m */,
 				8CF7BF91191584F50058F100 /* MasterViewController.h */,
 				8CF7BF92191584F50058F100 /* MasterViewController.m */,
 				8CF7BF94191584F50058F100 /* DetailViewController.h */,
@@ -169,6 +177,22 @@
 				8CF7BFA7191584F50058F100 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B073376F191588BD006FBFB9 /* Merchant */ = {
+			isa = PBXGroup;
+			children = (
+				B073377F191596F3006FBFB9 /* MerchantViewController.h */,
+				B0733780191596F3006FBFB9 /* MerchantViewController.m */,
+				B0733781191596F3006FBFB9 /* MerchantViewController.xib */,
+				B07337761915896B006FBFB9 /* IncomingRequest.h */,
+				B07337771915896B006FBFB9 /* IncomingRequest.m */,
+				B073377919158E89006FBFB9 /* Meal.h */,
+				B073377A19158E89006FBFB9 /* Meal.m */,
+				B073377C19159242006FBFB9 /* OutgoingOffer.h */,
+				B073377D19159242006FBFB9 /* OutgoingOffer.m */,
+			);
+			name = Merchant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +297,7 @@
 				8CF7BF93191584F50058F100 /* MasterViewController.m in Sources */,
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
-				8CF7BFBC191596970058F100 /* RequestForOfferViewController.m in Sources */,
+				8CF7BFBC191596970058F100 /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +506,7 @@
 				8CF7BFB0191584F50058F100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CF7BFB1191584F50058F100 /* Build configuration list for PBXNativeTarget "DisruptNYCTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				8CF7BFB3191584F50058F100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
