@@ -10,4 +10,10 @@
 
 @interface MerchantBidCell : UITableViewCell
 
+@property (weak) IBOutlet UIImageView *merchantCellImage;
+@property (weak) IBOutlet UILabel *merchantOfferLabel;
+@property (weak) IBOutlet UIImageView *merchantYelpRatingImage;
+
+
+
 @end
