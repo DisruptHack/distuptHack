@@ -22,6 +22,7 @@
 		8CF7BFA1191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
 		8CF7BFA9191584F50058F100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFA7191584F50058F100 /* InfoPlist.strings */; };
 		8CF7BFAB191584F50058F100 /* DisruptNYCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */; };
+		8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFB51915879E0058F100 /* MerchantBidCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		8CF7BFA6191584F50058F100 /* DisruptNYCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DisruptNYCTests-Info.plist"; sourceTree = "<group>"; };
 		8CF7BFA8191584F50058F100 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisruptNYCTests.m; sourceTree = "<group>"; };
+		8CF7BFB41915879E0058F100 /* MerchantBidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantBidCell.h; sourceTree = "<group>"; };
+		8CF7BFB51915879E0058F100 /* MerchantBidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantBidCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				8CF7BF8B191584F50058F100 /* AppDelegate.h */,
 				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CF7BF8E191584F50058F100 /* Main.storyboard */,
+				8CF7BFB41915879E0058F100 /* MerchantBidCell.h */,
+				8CF7BFB51915879E0058F100 /* MerchantBidCell.m */,
 				8CF7BF91191584F50058F100 /* MasterViewController.h */,
 				8CF7BF92191584F50058F100 /* MasterViewController.m */,
 				8CF7BF94191584F50058F100 /* DetailViewController.h */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */,
 				8CF7BF8D191584F50058F100 /* AppDelegate.m in Sources */,
 				8CF7BF93191584F50058F100 /* MasterViewController.m in Sources */,
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
