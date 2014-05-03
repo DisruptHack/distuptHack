@@ -15,5 +15,7 @@
 @synthesize offerImage;
 @synthesize offerExpirationDate;
 @synthesize associatedRequestId;
+@synthesize mealDate;
+@synthesize price;
 
 @end

@@ -28,6 +28,7 @@
 		B073377E19159242006FBFB9 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
 		B0733782191596F3006FBFB9 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
 		B0733783191596F3006FBFB9 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0733781191596F3006FBFB9 /* MerchantViewController.xib */; };
+		B073378619159F87006FBFB9 /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B073378519159F87006FBFB9 /* Merchant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		B073377F191596F3006FBFB9 /* MerchantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantViewController.h; sourceTree = "<group>"; };
 		B0733780191596F3006FBFB9 /* MerchantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantViewController.m; sourceTree = "<group>"; };
 		B0733781191596F3006FBFB9 /* MerchantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
+		B073378419159F87006FBFB9 /* Merchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
+		B073378519159F87006FBFB9 /* Merchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				B073377A19158E89006FBFB9 /* Meal.m */,
 				B073377C19159242006FBFB9 /* OutgoingOffer.h */,
 				B073377D19159242006FBFB9 /* OutgoingOffer.m */,
+				B073378419159F87006FBFB9 /* Merchant.h */,
+				B073378519159F87006FBFB9 /* Merchant.m */,
 			);
 			name = Merchant;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
 				B07337781915896B006FBFB9 /* IncomingRequest.m in Sources */,
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
+				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@
     NSDate *offerExpirationDate;
     NSDate *mealDate;
     NSString *associatedRequestId;
+    float *price;
 }
 
 @property (nonatomic, retain) NSString *offerId;
@@ -25,5 +26,6 @@
 @property (nonatomic, retain) NSDate *offerExpirationDate;
 @property (nonatomic, retain) NSDate *mealDate;
 @property (nonatomic, retain) NSString *associatedRequestId;
+@property (nonatomic, assign) float *price;
 
 @end

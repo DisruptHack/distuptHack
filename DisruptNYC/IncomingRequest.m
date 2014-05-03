@@ -11,8 +11,8 @@
 @implementation IncomingRequest
 
 @synthesize requestId;
-@synthesize bidCreationDate;
-@synthesize bidExpirationDate;
+@synthesize requestCreationDate;
+@synthesize requestExpirationDate;
 @synthesize eventDate;
 @synthesize previousVisits;
 @synthesize email;

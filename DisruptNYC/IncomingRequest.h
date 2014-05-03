@@ -10,8 +10,8 @@
 
 @interface IncomingRequest : NSObject {
     NSString *requestId;
-    NSDate *bidCreationDate;
-    NSDate *bidExpirationDate;
+    NSDate *requestCreationDate;
+    NSDate *requestExpirationDate;
     NSDate *eventDate;
     NSArray *previousVisits;
     NSString *email;
@@ -19,8 +19,8 @@
     NSString *customerAddress;
 }
 @property (nonatomic, retain) NSString *requestId;
-@property (nonatomic, retain) NSDate *bidCreationDate;
-@property (nonatomic, retain) NSDate *bidExpirationDate;
+@property (nonatomic, retain) NSDate *requestCreationDate;
+@property (nonatomic, retain) NSDate *requestExpirationDate;
 @property (nonatomic, retain) NSDate *eventDate;
 @property (nonatomic, retain) NSArray *previousVisits;
 @property (nonatomic, retain) NSString *email;
