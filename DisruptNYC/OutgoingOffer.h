@@ -12,7 +12,7 @@
 
 {
     NSString *offerId;
-    NSString *description;
+    NSString *mealDescription;
     UIImage *offerImage;
     NSDate *offerExpirationDate;
     NSDate *mealDate;
@@ -21,7 +21,7 @@
 }
 
 @property (nonatomic, retain) NSString *offerId;
-@property (nonatomic, retain) NSString *description;
+@property (nonatomic, retain) NSString *mealDescription;
 @property (nonatomic, retain) UIImage *offerImage;
 @property (nonatomic, retain) NSDate *offerExpirationDate;
 @property (nonatomic, retain) NSDate *mealDate;

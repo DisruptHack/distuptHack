@@ -29,7 +29,7 @@
     [super viewDidLoad];
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
     testOffer.offerExpirationDate = [NSDate new];
-    testOffer.description = @"Many steaks";
+    testOffer.mealDescription = @"Many steaks";
     [merchantOfferArray addObject:testOffer];
 }
 
