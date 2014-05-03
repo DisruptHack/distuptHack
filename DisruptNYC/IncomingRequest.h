@@ -18,6 +18,7 @@
     NSString *customerName;
     NSString *customerAddress;
 }
+
 @property (nonatomic, retain) NSString *requestId;
 @property (nonatomic, retain) NSDate *requestCreationDate;
 @property (nonatomic, retain) NSDate *requestExpirationDate;

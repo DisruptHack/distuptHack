@@ -11,8 +11,17 @@
 
 @interface MerchantViewController : UIViewController {
     NSMutableArray *incomingRequests;
+    NSMutableArray *acceptedOffers;
+    NSMutableArray *pendingOffers;
+    NSMutableArray *expiredOffers;
+    NSMutableArray *rejectedOffers;
 }
 
 @property (nonatomic, retain) NSMutableArray *incomingRequests;
+@property (nonatomic, retain) NSMutableArray *acceptedOffers;
+@property (nonatomic, retain) NSMutableArray *pendingOffers;
+@property (nonatomic, retain) NSMutableArray *expiredOffers;
+@property (nonatomic, retain) NSMutableArray *rejectedOffers;
+
 
 @end

@@ -15,6 +15,10 @@
 @implementation MerchantViewController
 
 @synthesize incomingRequests;
+@synthesize acceptedOffers;
+@synthesize pendingOffers;
+@synthesize expiredOffers;
+@synthesize rejectedOffers;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
