@@ -65,6 +65,9 @@
 		8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisruptNYCTests.m; sourceTree = "<group>"; };
 		8CF7BFB41915879E0058F100 /* MerchantBidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantBidCell.h; sourceTree = "<group>"; };
 		8CF7BFB51915879E0058F100 /* MerchantBidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantBidCell.m; sourceTree = "<group>"; };
+		8CF7BFBF1915A14D0058F100 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8CF7BFC11915A2330058F100 /* RequestForOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestForOfferViewController.h; sourceTree = "<group>"; };
+		8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestForOfferViewController.m; sourceTree = "<group>"; };
 		B07337761915896B006FBFB9 /* IncomingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingRequest.h; sourceTree = "<group>"; };
 		B07337771915896B006FBFB9 /* IncomingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingRequest.m; sourceTree = "<group>"; };
 		B073377919158E89006FBFB9 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF7BFC01915A14D0058F100 /* MapKit.framework in Frameworks */,
+				8CF7BFBE191599C60058F100 /* (null) in Frameworks */,
 				8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */,
 				8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */,
 				8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */,
@@ -124,6 +129,7 @@
 		8CF7BF7B191584F50058F100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CF7BFBF1915A14D0058F100 /* MapKit.framework */,
 				8CF7BF7C191584F50058F100 /* Foundation.framework */,
 				8CF7BF7E191584F50058F100 /* CoreGraphics.framework */,
 				8CF7BF80191584F50058F100 /* UIKit.framework */,
@@ -145,6 +151,8 @@
 				8CF7BF92191584F50058F100 /* MasterViewController.m */,
 				8CF7BF94191584F50058F100 /* DetailViewController.h */,
 				8CF7BF95191584F50058F100 /* DetailViewController.m */,
+				8CF7BFC11915A2330058F100 /* RequestForOfferViewController.h */,
+				8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */,
 				8CF7BF97191584F50058F100 /* Images.xcassets */,
 				8CF7BF83191584F50058F100 /* Supporting Files */,
 			);
@@ -274,7 +282,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0733783191596F3006FBFB9 /* MerchantViewController.xib in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
@@ -296,14 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B073377B19158E89006FBFB9 /* Meal.m in Sources */,
+				8CF7BFC51915A6EE0058F100 /* MerchantViewController.m in Sources */,
+				8CF7BFC61915A6EE0058F100 /* MerchantViewController.xib in Sources */,
+				8CF7BFC81915A6EE0058F100 /* IncomingRequest.m in Sources */,
+				8CF7BFCA1915A6EE0058F100 /* Meal.m in Sources */,
+				8CF7BFCC1915A6EE0058F100 /* OutgoingOffer.m in Sources */,
 				8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */,
 				8CF7BF8D191584F50058F100 /* AppDelegate.m in Sources */,
-				B073377E19159242006FBFB9 /* OutgoingOffer.m in Sources */,
 				8CF7BF93191584F50058F100 /* MasterViewController.m in Sources */,
-				B0733782191596F3006FBFB9 /* MerchantViewController.m in Sources */,
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
-				B07337781915896B006FBFB9 /* IncomingRequest.m in Sources */,
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
 			);
@@ -430,10 +438,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -443,10 +453,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

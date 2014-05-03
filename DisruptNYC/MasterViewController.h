@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OutgoingOffer.h"
 
 @interface MasterViewController : UITableViewController
 
