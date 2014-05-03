@@ -31,6 +31,7 @@
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
     testOffer.offerExpirationDate = [NSDate new];
     testOffer.mealDescription = @"Many steaks";
+    testOffer.offerImage = [UIImage imageNamed:@"test"];
     [merchantOfferArray addObject:testOffer];
 }
 
