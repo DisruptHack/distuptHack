@@ -10,7 +10,8 @@
 #import <MapKit/MapKit.h>
 
 @interface RequestForOfferViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UISlider *distanceSlider;
 
-@property (weak) IBOutlet MKMapView *mapView;
 
 @end

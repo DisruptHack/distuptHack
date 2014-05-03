@@ -107,6 +107,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Request Offer" id="rx9-3E-s1A"/>
+                    <connections>
+                        <outlet property="distanceSlider" destination="dke-cg-Idi" id="oGw-wD-5tF"/>
+                        <outlet property="mapView" destination="bh4-1R-oSQ" id="nvj-kP-RQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTr-UH-YIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
