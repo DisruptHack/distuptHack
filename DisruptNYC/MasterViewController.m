@@ -27,9 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    MerchantBidCell *testMerchantBidCell = [[MerchantBidCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: kMerchantBidCellResuseIdentifier];
-    testMerchantBidCell.merchantOfferLabel.text = @"Samlple offer!";
-    
+    OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
+    testOffer.offerExpirationDate = [NSDate new];
+    testOffer.description = @"Many steaks";
+    [merchantOfferArray addObject:testOffer];
 }
 
 - (void)didReceiveMemoryWarning

@@ -45,10 +45,18 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1hr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuE-e9-NpN">
+                                            <rect key="frame" x="269" y="20" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="expirationLabel" destination="RuE-e9-NpN" id="cE1-2G-tni"/>
                                     <outlet property="merchantCellImage" destination="LfG-60-kwu" id="OoI-ZI-y89"/>
+                                    <outlet property="merchantOfferLabel" destination="dVM-8c-sVx" id="Gdn-71-zal"/>
                                     <segue destination="Ah7-4n-0Wa" kind="push" id="ugC-Tp-7R5"/>
                                 </connections>
                             </tableViewCell>
