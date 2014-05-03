@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IncomingRequest.h"
 
-@interface MerchantViewController : UIViewController
+@interface MerchantViewController : UIViewController {
+    NSMutableArray *incomingRequests;
+}
+
+@property (nonatomic, retain) NSMutableArray *incomingRequests;
 
 @end

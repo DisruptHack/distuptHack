@@ -10,6 +10,7 @@
 
 @implementation IncomingRequest
 
+@synthesize requestId;
 @synthesize bidCreationDate;
 @synthesize bidExpirationDate;
 @synthesize eventDate;

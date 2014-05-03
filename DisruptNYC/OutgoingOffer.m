@@ -14,6 +14,6 @@
 @synthesize description;
 @synthesize offerImage;
 @synthesize offerExpirationDate;
-@synthesize associatedBidId;
+@synthesize associatedRequestId;
 
 @end

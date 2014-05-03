@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface IncomingRequest : NSObject {
+    NSString *requestId;
     NSDate *bidCreationDate;
     NSDate *bidExpirationDate;
     NSDate *eventDate;
@@ -17,6 +18,7 @@
     NSString *customerName;
     NSString *customerAddress;
 }
+@property (nonatomic, retain) NSString *requestId;
 @property (nonatomic, retain) NSDate *bidCreationDate;
 @property (nonatomic, retain) NSDate *bidExpirationDate;
 @property (nonatomic, retain) NSDate *eventDate;

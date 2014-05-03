@@ -15,13 +15,15 @@
     NSString *description;
     UIImage *offerImage;
     NSDate *offerExpirationDate;
-    NSString *associatedBidId;
+    NSDate *mealDate;
+    NSString *associatedRequestId;
 }
 
 @property (nonatomic, retain) NSString *offerId;
 @property (nonatomic, retain) NSString *description;
 @property (nonatomic, retain) UIImage *offerImage;
 @property (nonatomic, retain) NSDate *offerExpirationDate;
-@property (nonatomic, retain) NSString *associatedBidId;
+@property (nonatomic, retain) NSDate *mealDate;
+@property (nonatomic, retain) NSString *associatedRequestId;
 
 @end
