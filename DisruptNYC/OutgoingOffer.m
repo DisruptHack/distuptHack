@@ -11,7 +11,7 @@
 @implementation OutgoingOffer
 
 @synthesize offerId;
-@synthesize description;
+@synthesize mealDescription;
 @synthesize offerImage;
 @synthesize offerExpirationDate;
 @synthesize associatedRequestId;
