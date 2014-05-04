@@ -15,6 +15,8 @@
 @synthesize name;
 @synthesize acceptButton;
 @synthesize denyButton;
+@synthesize userImage;
+@synthesize statusLabel;
 
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {

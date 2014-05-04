@@ -51,6 +51,9 @@
                                             <state key="normal" image="accept.png">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="acceptOffer:" destination="pGg-6v-bdr" eventType="touchUpInside" id="Zvl-0e-vHM"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
