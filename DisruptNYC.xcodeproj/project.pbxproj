@@ -28,6 +28,7 @@
 		8CDF4DC31915FB68008AF646 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
 		8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DC51916000B008AF646 /* ANPopoverSlider.m */; };
 		8CDF4DC91916000B008AF646 /* ANPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DC71916000B008AF646 /* ANPopoverView.m */; };
+		8CDF4DCE19160E6D008AF646 /* city-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DCD19160E6D008AF646 /* city-image@2x.png */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
 		8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
@@ -75,6 +76,7 @@
 		8CDF4DC51916000B008AF646 /* ANPopoverSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPopoverSlider.m; sourceTree = "<group>"; };
 		8CDF4DC61916000B008AF646 /* ANPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPopoverView.h; sourceTree = "<group>"; };
 		8CDF4DC71916000B008AF646 /* ANPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPopoverView.m; sourceTree = "<group>"; };
+		8CDF4DCD19160E6D008AF646 /* city-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "city-image@2x.png"; sourceTree = "<group>"; };
 		8CF7BF79191584F50058F100 /* DisruptNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisruptNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF7BF7C191584F50058F100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CF7BF7E191584F50058F100 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -266,6 +268,7 @@
 		8CF7BFD51915B64A0058F100 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8CDF4DCD19160E6D008AF646 /* city-image@2x.png */,
 				8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */,
 				8CF7BFF91915D7490058F100 /* american-button@2x.png */,
 				8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */,
@@ -402,6 +405,7 @@
 				8CDF4DB71915FB10008AF646 /* blue-doubleslider@2x.png in Resources */,
 				8CDF4DB81915FB10008AF646 /* circle-radius@2x.png in Resources */,
 				8CDF4DB91915FB10008AF646 /* double-slider-controller@2x.png in Resources */,
+				8CDF4DCE19160E6D008AF646 /* city-image@2x.png in Resources */,
 				8CDF4DBA1915FB10008AF646 /* grey bar@2x.png in Resources */,
 				8CDF4DBB1915FB10008AF646 /* grey-cuisine-background@2x.png in Resources */,
 				8CDF4DBC1915FB10008AF646 /* greybackground-doubleslider@2x.png in Resources */,
