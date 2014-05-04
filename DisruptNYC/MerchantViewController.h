@@ -17,6 +17,7 @@
     NSMutableArray *expiredOffers;
     NSMutableArray *rejectedOffers;
     NSMutableArray *requests;
+    NSMutableArray *meals;
     CellOwner *cellOwner;
     UITableView *mealsTableView;
     UIView *mealsView;

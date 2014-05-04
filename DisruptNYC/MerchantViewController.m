@@ -48,9 +48,7 @@
     
     NSArray *sampleMealNames = [[NSArray alloc] initWithObjects:@"Dinner,Wine, Dessert",@"App, Dinner, Dessert",@"App & Dinner",@"Dinner", nil];
     
-    NSArray *sampleMealImages = [[NSArray alloc] initWithObjects:@"$75.00",@"$50.00",@"$75.00",@"$35.00", nil];
-
-
+    NSArray *sampleMealImages = [[NSArray alloc] initWithObjects:@"meal1.png",@"meal2.png",@"meal3.png",@"meal4.png", nil];
 
     
     requests = [[NSMutableArray alloc] init];
@@ -61,6 +59,15 @@
         tempOffer.customerName = [sampleNames objectAtIndex:i];
         tempOffer.state = 0;
         [requests addObject:tempOffer];
+    }
+    
+    meals = [[NSMutableArray alloc] init];
+    for (int i=0; i<[sampleMealPrices count]; i++) {
+        OutgoingOffer *tempOffer = [[OutgoingOffer alloc] init];
+        tempOffer.price = [sampleMealPrices objectAtIndex:i];
+        tempOffer.mealName = [sampleMealNames objectAtIndex:i];
+        tempOffer.offerImage = [UIImage imageNamed:[sampleMealImages objectAtIndex:i]];
+        [meals addObject:tempOffer];
     }
     
     self.view.backgroundColor = [UIColor grayColor];
@@ -78,6 +85,16 @@
     [button setTitle:@"Edit Offers" forState:UIControlStateNormal];
     button.frame = CGRectMake(40.0, 528, 100, 40.0);
     [self.view addSubview:button];
+    
+    //add button to go to meal builder
+    UIButton *refreshButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [refreshButton addTarget:self
+               action:@selector(refreshOffers)
+     forControlEvents:UIControlEventTouchUpInside];
+    [refreshButton setTitle:@"Refresh" forState:UIControlStateNormal];
+    refreshButton.frame = CGRectMake(190.0, 528, 100, 40.0);
+    [self.view addSubview:refreshButton];
+
 
 }
 
@@ -108,6 +125,10 @@
     
 }
 
+-(void)refreshOffers{
+    
+}
+
 -(void)dismissMealsView {
     [mealsView removeFromSuperview];
 }
@@ -123,7 +144,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 	//NSLog(@"rows in section);
-	return [requests count];
+    if (tableView.tag ==1) {
+        return [requests count];
+    }
+   else {
+        return [meals count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -166,8 +192,10 @@
 		[cellOwner loadMyNibFile:nibName];
 		// get a pointer to the loaded cell from the cellOwner and cast it to the appropriate type
 		cell2 = (MealTableViewCell *)cellOwner.cell;
-//        [cell2.chooseMealButton addTarget:self action:@selector(acceptRequest:) forControlEvents:UIControlEventTouchUpInside];
-//        cell2.chooseMealButton.tag = row;
+        OutgoingOffer *tempOffer = [meals objectAtIndex:row];
+        cell2.title.text = tempOffer.mealName;
+        cell2.price.text = tempOffer.price;
+        cell2.mealImageView.image = tempOffer.offerImage;
 		cell = cell2;
     }
 		return cell;
