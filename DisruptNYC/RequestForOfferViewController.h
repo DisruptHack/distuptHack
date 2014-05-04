@@ -14,6 +14,7 @@
 @interface RequestForOfferViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet ANPopoverSlider *distanceSlider;
+@property (weak, nonatomic) IBOutlet UILabel *userLabel;
 
 
 @end

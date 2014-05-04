@@ -80,13 +80,9 @@
 		B07337B6191626F5006FBFB9 /* meal2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B2191626F5006FBFB9 /* meal2.png */; };
 		B07337B7191626F5006FBFB9 /* meal1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B3191626F5006FBFB9 /* meal1.png */; };
 		B07337C219163CA9006FBFB9 /* Merchant View.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B919163CA8006FBFB9 /* Merchant View.png */; };
-		B07337C319163CA9006FBFB9 /* delete-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BA19163CA8006FBFB9 /* delete-icon.png */; };
 		B07337C419163CA9006FBFB9 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BC19163CA9006FBFB9 /* photo3.png */; };
 		B07337C519163CA9006FBFB9 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BD19163CA9006FBFB9 /* photo2.png */; };
-		B07337C619163CA9006FBFB9 /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BE19163CA9006FBFB9 /* photo4.png */; };
 		B07337C719163CA9006FBFB9 /* photo6.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BF19163CA9006FBFB9 /* photo6.png */; };
-		B07337C819163CA9006FBFB9 /* photo7.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337C019163CA9006FBFB9 /* photo7.png */; };
-		B07337C919163CA9006FBFB9 /* photo8.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337C119163CA9006FBFB9 /* photo8.png */; };
 		B07337CB191640B3006FBFB9 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337CA191640B3006FBFB9 /* carrot.png */; };
 /* End PBXBuildFile section */
 
@@ -770,7 +766,7 @@
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
+				PROVISIONING_PROFILE = "9FFBA1F0-CAF8-4CC4-B771-0168AC89FEB5";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -781,13 +777,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Emin Israfil (X2DL555UH7)";
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
+				PROVISIONING_PROFILE = "9FFBA1F0-CAF8-4CC4-B771-0168AC89FEB5";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
