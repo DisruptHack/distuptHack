@@ -212,8 +212,7 @@
 
 -(void)setLimitAmount:(NSArray*)expenseAccount
 {
-    //NSMutableDictionary* dict = [[NSMutableDictionary alloc]init];
-    //[dict setObject:<#(id)#> forKey:<#(id<NSCopying>)#>]
+   
     
     NSDictionary* expense = [expenseAccount objectAtIndex:0];
     NSDictionary* limit = [expense objectForKey:@"ReportTotal"];
