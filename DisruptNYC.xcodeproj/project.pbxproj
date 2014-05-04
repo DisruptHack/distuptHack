@@ -28,6 +28,12 @@
 		B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */; };
 		B07337891915BC0B006FBFB9 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
 		B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
+		B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
+		B073378C1915C6B3006FBFB9 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
+		B073378F1915C915006FBFB9 /* MerchantView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B073378E1915C915006FBFB9 /* MerchantView~iphone.xib */; };
+		B07337941915D11F006FBFB9 /* CellOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337901915D11F006FBFB9 /* CellOwner.m */; };
+		B07337951915D11F006FBFB9 /* Cell1.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337921915D11F006FBFB9 /* Cell1.m */; };
+		B07337971915D178006FBFB9 /* Cell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07337961915D178006FBFB9 /* Cell1.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +82,15 @@
 		B073377D19159242006FBFB9 /* OutgoingOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutgoingOffer.m; sourceTree = "<group>"; };
 		B073377F191596F3006FBFB9 /* MerchantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantViewController.h; sourceTree = "<group>"; };
 		B0733780191596F3006FBFB9 /* MerchantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantViewController.m; sourceTree = "<group>"; };
-		B0733781191596F3006FBFB9 /* MerchantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
+		B0733781191596F3006FBFB9 /* MerchantView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MerchantView~ipad.xib"; sourceTree = "<group>"; };
 		B073378419159F87006FBFB9 /* Merchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
 		B073378519159F87006FBFB9 /* Merchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
+		B073378E1915C915006FBFB9 /* MerchantView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MerchantView~iphone.xib"; sourceTree = "<group>"; };
+		B07337901915D11F006FBFB9 /* CellOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellOwner.m; sourceTree = "<group>"; };
+		B07337911915D11F006FBFB9 /* Cell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell1.h; sourceTree = "<group>"; };
+		B07337921915D11F006FBFB9 /* Cell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell1.m; sourceTree = "<group>"; };
+		B07337931915D11F006FBFB9 /* CellOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOwner.h; sourceTree = "<group>"; };
+		B07337961915D178006FBFB9 /* Cell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell1.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,7 @@
 		8CF7BF82191584F50058F100 /* DisruptNYC */ = {
 			isa = PBXGroup;
 			children = (
+				B073378D1915C885006FBFB9 /* iPad */,
 				8CF7BF8B191584F50058F100 /* AppDelegate.h */,
 				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CF7BF8E191584F50058F100 /* Main.storyboard */,
@@ -199,9 +212,15 @@
 		B073376F191588BD006FBFB9 /* Merchant */ = {
 			isa = PBXGroup;
 			children = (
+				B07337961915D178006FBFB9 /* Cell1.xib */,
+				B07337931915D11F006FBFB9 /* CellOwner.h */,
+				B07337901915D11F006FBFB9 /* CellOwner.m */,
+				B07337911915D11F006FBFB9 /* Cell1.h */,
+				B07337921915D11F006FBFB9 /* Cell1.m */,
 				B073377F191596F3006FBFB9 /* MerchantViewController.h */,
 				B0733780191596F3006FBFB9 /* MerchantViewController.m */,
-				B0733781191596F3006FBFB9 /* MerchantViewController.xib */,
+				B0733781191596F3006FBFB9 /* MerchantView~ipad.xib */,
+				B073378E1915C915006FBFB9 /* MerchantView~iphone.xib */,
 				B07337761915896B006FBFB9 /* IncomingRequest.h */,
 				B07337771915896B006FBFB9 /* IncomingRequest.m */,
 				B073377919158E89006FBFB9 /* Meal.h */,
@@ -212,6 +231,13 @@
 				B073378519159F87006FBFB9 /* Merchant.m */,
 			);
 			name = Merchant;
+			sourceTree = "<group>";
+		};
+		B073378D1915C885006FBFB9 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,10 +316,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07337971915D178006FBFB9 /* Cell1.xib in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
+				B073378F1915C915006FBFB9 /* MerchantView~iphone.xib in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
-				8CF7BFD41915B6430058F100 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */,
+				B073378C1915C6B3006FBFB9 /* IncomingRequest.m in Sources */,
 				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
+				B07337951915D11F006FBFB9 /* Cell1.m in Sources */,
 				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
 				B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */,
+				B07337941915D11F006FBFB9 /* CellOwner.m in Sources */,
 				8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */,
 				8CF7BF8D191584F50058F100 /* AppDelegate.m in Sources */,
 				8CF7BF93191584F50058F100 /* MasterViewController.m in Sources */,
@@ -449,8 +480,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -464,8 +497,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

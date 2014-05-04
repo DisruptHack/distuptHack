@@ -80,6 +80,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="gotoMerchantView:" destination="pGg-6v-bdr" eventType="touchUpInside" id="93S-DC-qeS"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" id="9ql-Ux-fgR">
