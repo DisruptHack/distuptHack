@@ -7,8 +7,10 @@
 //
 
 #import "MerchantViewController.h"
+#import "OfferBuilderViewController.h"
 #import "Cell1.h"
 #import "MealTableViewCell.h"
+#import "OutgoingOffer.h"
 
 @interface MerchantViewController ()
 
@@ -36,11 +38,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UITableView *offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,320,568)];
+    self.view.backgroundColor = [UIColor grayColor];
+    UITableView *offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,40,320,488)];
     offerTableView.delegate = self;
     offerTableView.dataSource = self;
     offerTableView.tag = 1;
     [self.view addSubview:offerTableView];
+    
+    //add button to go to meal builder
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self
+               action:@selector(gotoOfferBuilder)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Edit Offers" forState:UIControlStateNormal];
+    button.frame = CGRectMake(40.0, 528, 100, 40.0);
+    [self.view addSubview:button];
+
 }
 
 - (IBAction)acceptRequest:(id)sender {
@@ -54,6 +67,13 @@
     mealsTableView.dataSource = self;
     mealsTableView.tag = 2;
     [mealsView addSubview:mealsTableView];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self
+               action:@selector(dismissMealsView)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Cancel" forState:UIControlStateNormal];
+    button.frame = CGRectMake(40.0, mealsView.frame.size.height-45, 100, 40.0);
+    [mealsView addSubview:button];
     [self.view addSubview:mealsView];
     
 }
@@ -61,6 +81,16 @@
 - (IBAction)refuseRequest:(id)sender {
     NSLog(@"Refused, Row %i", ((UIButton *)sender).tag);
     
+}
+
+-(void)dismissMealsView {
+    [mealsView removeFromSuperview];
+}
+
+-(void)gotoOfferBuilder {
+    OfferBuilderViewController *dvController = [[OfferBuilderViewController alloc] initWithNibName:@"OfferBuilderView" bundle:nil];
+    [self presentViewController:dvController animated:YES completion:nil];
+
 }
 
 #pragma mark
@@ -190,7 +220,10 @@
 	NSUInteger row = [indexPath row];
 	NSLog(@"Setting up cell %i", row);
 	
-    return 90;
+    if (tableView.tag == 1)
+        return 90;
+    else
+        return 70;
 	
 }
 
