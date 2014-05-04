@@ -14,6 +14,7 @@
 
 #import "DetailViewController.h"
 
+
 @interface MasterViewController () {
     NSMutableArray *merchantOfferArray;
 }
@@ -39,12 +40,10 @@
     UIImage *animatedGif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://37.media.tumblr.com/tumblr_lx9qvrIYEx1qe5q3go1_500.gif"]];
     testOffer.offerImage = animatedGif;//[UIImage imageNamed:@"test"];
     [merchantOfferArray addObject:testOffer];
-    [merchantOfferArray addObject:testOffer];
-    [merchantOfferArray addObject:testOffer];
-    [merchantOfferArray addObject:testOffer];
-    [merchantOfferArray addObject:testOffer];
-    [merchantOfferArray addObject:testOffer];
     
+    Connection* conn = [[Connection alloc]init];
+    
+    [conn testConnection];
 }
 
 -(NSInteger)getHoursTillExpiration:(NSDate *) expirationDate{
