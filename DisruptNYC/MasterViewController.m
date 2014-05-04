@@ -27,11 +27,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //test stuff - will be deleted
     merchantOfferArray = [[NSMutableArray alloc]init];
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
     testOffer.offerExpirationDate = [NSDate new];
     testOffer.mealDescription = @"Many steaks";
     testOffer.offerImage = [UIImage imageNamed:@"test"];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
     [merchantOfferArray addObject:testOffer];
 }
 

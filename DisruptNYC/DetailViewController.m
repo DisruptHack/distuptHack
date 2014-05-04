@@ -31,7 +31,7 @@
     // Update the user interface for the detail item.
 
     if (self.merchantBidOffer) {
-        self.detailDescriptionLabel.text = [self.merchantBidOffer description];
+        self.mealDescription.text = [self.merchantBidOffer description];
     }
 }
 
@@ -40,6 +40,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    self.view.backgroundColor = [UIColor blueColor]; 
 }
 
 - (void)didReceiveMemoryWarning
