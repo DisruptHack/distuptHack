@@ -13,15 +13,19 @@
 	UILabel *price;
 	UILabel *time;
 	UILabel *name;
+    UILabel *statusLabel;
     UIButton *acceptButton;
     UIButton *denyButton;
+    UIImageView *userImage;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *price;
 @property (nonatomic, retain) IBOutlet UILabel *time;
 @property (nonatomic, retain) IBOutlet UILabel *name;
+@property (nonatomic, retain) IBOutlet UILabel *statusLabel;
 @property (nonatomic, retain) IBOutlet UIButton *acceptButton;
 @property (nonatomic, retain) IBOutlet UIButton *denyButton;
+@property (nonatomic, retain) IBOutlet UIImageView *userImage;
 
 
 @end
