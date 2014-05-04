@@ -67,6 +67,7 @@
 		8CF7BFBF1915A14D0058F100 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8CF7BFC11915A2330058F100 /* RequestForOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestForOfferViewController.h; sourceTree = "<group>"; };
 		8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestForOfferViewController.m; sourceTree = "<group>"; };
+		8CF7BFD31915B6430058F100 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		B07337761915896B006FBFB9 /* IncomingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingRequest.h; sourceTree = "<group>"; };
 		B07337771915896B006FBFB9 /* IncomingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingRequest.m; sourceTree = "<group>"; };
 		B073377919158E89006FBFB9 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 				8CF7BF8B191584F50058F100 /* AppDelegate.h */,
 				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CF7BF8E191584F50058F100 /* Main.storyboard */,
+				8CF7BFD51915B64A0058F100 /* Assets */,
 				B073376F191588BD006FBFB9 /* Merchant */,
 				8CF7BFB41915879E0058F100 /* MerchantBidCell.h */,
 				8CF7BFB51915879E0058F100 /* MerchantBidCell.m */,
@@ -184,6 +186,14 @@
 				8CF7BFA7191584F50058F100 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF7BFD51915B64A0058F100 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8CF7BFD31915B6430058F100 /* test.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		B073376F191588BD006FBFB9 /* Merchant */ = {
@@ -283,6 +293,7 @@
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
+				8CF7BFD41915B6430058F100 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

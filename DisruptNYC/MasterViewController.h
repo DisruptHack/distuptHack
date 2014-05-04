@@ -10,5 +10,6 @@
 #import "OutgoingOffer.h"
 
 @interface MasterViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UIButton *invisibleButton;
 
 @end

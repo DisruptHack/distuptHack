@@ -27,9 +27,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //test stuff - will be deleted
+    merchantOfferArray = [[NSMutableArray alloc]init];
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
     testOffer.offerExpirationDate = [NSDate new];
     testOffer.mealDescription = @"Many steaks";
+    testOffer.offerImage = [UIImage imageNamed:@"test"];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
+    [merchantOfferArray addObject:testOffer];
     [merchantOfferArray addObject:testOffer];
 }
 
@@ -64,10 +73,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMerchantBidCellResuseIdentifier forIndexPath:indexPath];
-
+    MerchantBidCell *bidCell = [tableView dequeueReusableCellWithIdentifier:kMerchantBidCellResuseIdentifier forIndexPath:indexPath];
     
-    return cell;
+    OutgoingOffer *currentOffer = [merchantOfferArray objectAtIndex:indexPath.row];
+    
+    bidCell.merchantOfferLabel.text = currentOffer.mealDescription;
+    bidCell.merchantCellImage.image = currentOffer.offerImage;
+    bidCell.expirationLabel.text = [currentOffer.offerExpirationDate description];
+    return bidCell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -86,21 +99,6 @@
     }
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
