@@ -182,9 +182,9 @@
 }
 
 -(void)gotoOfferBuilder {
-    OfferBuilderViewController *dvController = [[OfferBuilderViewController alloc] initWithNibName:@"OfferBuilderView" bundle:nil];
-    [self presentViewController:dvController animated:YES completion:nil];
-
+//    OfferBuilderViewController *dvController = [[OfferBuilderViewController alloc] initWithNibName:@"OfferBuilderView" bundle:nil];
+//    [self presentViewController:dvController animated:YES completion:nil];
+//
 }
 
 #pragma mark
