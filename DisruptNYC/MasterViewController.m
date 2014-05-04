@@ -31,19 +31,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //test stuff - will be deleted
+
     merchantOfferArray = [[NSMutableArray alloc]init];
+    [self populateWithFakeData];
+    
+}
+
+-(void)populateWithFakeData{
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
     testOffer.offerExpirationDate = [NSDate date];
-
     testOffer.mealDescription = @"Many steaks";
     UIImage *animatedGif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://37.media.tumblr.com/tumblr_lx9qvrIYEx1qe5q3go1_500.gif"]];
-    testOffer.offerImage = animatedGif;//[UIImage imageNamed:@"test"];
+    testOffer.offerImage = animatedGif;
     [merchantOfferArray addObject:testOffer];
     
-    Connection* conn = [[Connection alloc]init];
-    [conn testConnection];
+    
+    OutgoingOffer *testOffer2 = [[OutgoingOffer alloc]init];
+    testOffer2.offerExpirationDate = [NSDate date];
+    testOffer2.mealDescription = @"some steaks";
+    testOffer2.offerImage = [UIImage imageNamed:@"restaurant1"];
+    [merchantOfferArray addObject:testOffer2];
+    
+    OutgoingOffer *testOffer3 = [[OutgoingOffer alloc]init];
+    testOffer3.offerExpirationDate = [NSDate date];
+    testOffer3.mealDescription = @"shit load of steaks";
+    testOffer3.offerImage = [UIImage imageNamed:@"restaurant2"];
+    [merchantOfferArray addObject:testOffer3];
+    
+    OutgoingOffer *testOffer4 = [[OutgoingOffer alloc]init];
+    testOffer4.offerExpirationDate = [NSDate date];
+    testOffer4.mealDescription = @"meh steaks";
+    testOffer4.offerImage = [UIImage imageNamed:@"restaurant3"];
+    [merchantOfferArray addObject:testOffer4];
+
+    
 }
 
 -(NSInteger)getHoursTillExpiration:(NSDate *) expirationDate{
@@ -87,12 +108,14 @@
     bidCell.merchantCellImage.layer.shadowPath = path;
     //bidCell.merchantCellImage.layer.shouldRasterize = YES;
     
-    [UIView animateWithDuration:2.5
-                          delay:.75
+    [UIView animateWithDuration:1.4
+                          delay:.3
                         options:UIViewAnimationOptionCurveEaseOut animations:^{
-                            bidCell.expirationLabel.alpha =.75;
+                            bidCell.merchantOfferLabel.alpha =.8;
+                            bidCell.merchantOfferLabelBackground.alpha = .8;
                         } completion:^(BOOL finished) {
-                            bidCell.expirationLabel.alpha =.75;
+                            bidCell.merchantOfferLabel.alpha =.8;
+                            bidCell.merchantOfferLabelBackground.alpha = .8;
                         }];
 
     return bidCell;
