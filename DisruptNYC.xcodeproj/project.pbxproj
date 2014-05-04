@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BCCDBC219162B09002916C6 /* UserP2PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDBC119162B09002916C6 /* UserP2PViewController.m */; };
+		7BCCDBC519162B15002916C6 /* MerchantP2PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */; };
 		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
 		8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
 		8CDF4DB41915FADC008AF646 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
@@ -25,7 +27,6 @@
 		8CDF4DC11915FB10008AF646 /* tooltip-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0051915D7490058F100 /* tooltip-image@2x.png */; };
 		8CDF4DC21915FB10008AF646 /* wine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0061915D7490058F100 /* wine@2x.png */; };
 		8CDF4DC31915FB68008AF646 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
-		8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DC51916000B008AF646 /* ANPopoverSlider.m */; };
 		8CDF4DC91916000B008AF646 /* ANPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DC71916000B008AF646 /* ANPopoverView.m */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
@@ -73,6 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BCCDBC019162B09002916C6 /* UserP2PViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserP2PViewController.h; path = DisruptNYC/UserP2PViewController.h; sourceTree = "<group>"; };
+		7BCCDBC119162B09002916C6 /* UserP2PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserP2PViewController.m; path = DisruptNYC/UserP2PViewController.m; sourceTree = "<group>"; };
+		7BCCDBC319162B15002916C6 /* MerchantP2PViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MerchantP2PViewController.h; path = DisruptNYC/MerchantP2PViewController.h; sourceTree = "<group>"; };
+		7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MerchantP2PViewController.m; path = DisruptNYC/MerchantP2PViewController.m; sourceTree = "<group>"; };
 		8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-invited-button@2x.png"; sourceTree = "<group>"; };
 		8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
@@ -177,6 +182,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BCCDBBF19162989002916C6 /* P2P */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCDBC319162B15002916C6 /* MerchantP2PViewController.h */,
+				7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */,
+				7BCCDBC019162B09002916C6 /* UserP2PViewController.h */,
+				7BCCDBC119162B09002916C6 /* UserP2PViewController.m */,
+			);
+			name = P2P;
+			sourceTree = "<group>";
+		};
 		8CDF4DCA19160020008AF646 /* PopoverSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 		8CF7BF70191584F50058F100 = {
 			isa = PBXGroup;
 			children = (
+				7BCCDBBF19162989002916C6 /* P2P */,
 				B0C8B9CF1915BD4F00F1C592 /* APICalls */,
 				8CF7BF82191584F50058F100 /* DisruptNYC */,
 				8CF7BFA4191584F50058F100 /* DisruptNYCTests */,
@@ -470,10 +487,12 @@
 			files = (
 				8CDF4DB41915FADC008AF646 /* Connection.m in Sources */,
 				B073379B1915ECA9006FBFB9 /* MealTableViewCell.m in Sources */,
+				7BCCDBC519162B15002916C6 /* MerchantP2PViewController.m in Sources */,
 				B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */,
 				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
 				B07337A91915F976006FBFB9 /* CellOwner.m in Sources */,
 				8CDF4DC91916000B008AF646 /* ANPopoverView.m in Sources */,
+				7BCCDBC219162B09002916C6 /* UserP2PViewController.m in Sources */,
 				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
 				B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */,
 				B07337A71915F976006FBFB9 /* Cell1.m in Sources */,
