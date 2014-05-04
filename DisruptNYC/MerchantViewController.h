@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "IncomingRequest.h"
 #import "CellOwner.h"
+@import MultipeerConnectivity;
 
-@interface MerchantViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+
+@interface MerchantViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MCSessionDelegate, MCBrowserViewControllerDelegate>{
     NSMutableArray *incomingRequests;
     NSMutableArray *acceptedOffers;
     NSMutableArray *pendingOffers;
