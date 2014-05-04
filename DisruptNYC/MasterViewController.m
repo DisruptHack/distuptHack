@@ -42,9 +42,7 @@
     testOffer.offerImage = animatedGif;//[UIImage imageNamed:@"test"];
     [merchantOfferArray addObject:testOffer];
     
-    Connection* conn = [[Connection alloc]init];
     
-    [conn testConnection];
 }
 
 -(NSInteger)getHoursTillExpiration:(NSDate *) expirationDate{
