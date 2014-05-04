@@ -53,11 +53,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    _peerID = [[MCPeerID alloc] initWithDisplayName:@"Merchant"];
-    _mcSession = [[MCSession alloc] initWithPeer:_peerID];
-    _mcSession.delegate = self;
-    _peers = [[NSMutableArray alloc] init];
+//    
+//    _peerID = [[MCPeerID alloc] initWithDisplayName:@"Merchant"];
+//    _mcSession = [[MCSession alloc] initWithPeer:_peerID];
+//    _mcSession.delegate = self;
+//    _peers = [[NSMutableArray alloc] init];
     
     //dummy arrays
     NSArray *samplePrices = [[NSArray alloc] initWithObjects:@"$75.00",@"$50.00",@"$75.00",@"$35.00", @"$75.00",@"$100.00",@"$75.00", nil];
