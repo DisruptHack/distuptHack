@@ -10,7 +10,7 @@
 #import "OutgoingOffer.h"
 #import "Connection.h"
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <MCSessionDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *invisibleButton;
 
 @end
