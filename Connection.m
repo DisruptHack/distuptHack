@@ -196,6 +196,10 @@ static Connection *sharedPayModel = nil;
     }
     else {
         self.finishedRequest = YES;
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"TestNotification"
+         object:self];
+        
         NSLog(@"Array: %@", jsonArray);
     }
     

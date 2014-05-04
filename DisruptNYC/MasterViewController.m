@@ -12,6 +12,7 @@
 #import "MasterViewController.h"
 #import "MerchantBidCell.h"
 #import "MerchantViewController.h"
+#import "Connection.h"
 
 #import "DetailViewController.h"
 
@@ -32,6 +33,9 @@
 {
     [super viewDidLoad];
 
+    
+//    Connection* con = [Connection model];
+//    BOOL b = con.finishedRequest;
     merchantOfferArray = [[NSMutableArray alloc]init];
     [self populateWithFakeData];
     
