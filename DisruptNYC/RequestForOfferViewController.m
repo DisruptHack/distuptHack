@@ -77,8 +77,18 @@
     // unless you use this method for observation of other notifications
     // as well.
     
-    if ([[notification name] isEqualToString:@"TestNotification"])
-        NSLog (@"Successfully received the test notification!");
+    if ([[notification name] isEqualToString:@"TestNotification"]){
+        Connection *connection =  notification.object;
+        NSLog (@"Successfully received the test notification! %@", connection.name);
+        
+        [UIView animateWithDuration:1 delay:.2 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self.userLabel.text = [NSString stringWithFormat:@"(Concur User: %@)", connection.name];
+        } completion:^(BOOL finished) {
+            self.userLabel.text = [NSString stringWithFormat:@"(Concur User: %@)", connection.name];
+        }];
+    }
+    
+    
 }
 
 

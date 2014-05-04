@@ -69,7 +69,7 @@
 -(void)populateWithFakeData{
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
     testOffer.offerExpirationDate = [NSDate date];
-    testOffer.mealDescription = @"Many steaks";
+    testOffer.mealDescription = @"Rosevelt Hotel Rooftop";
     UIImage *animatedGif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://37.media.tumblr.com/tumblr_lx9qvrIYEx1qe5q3go1_500.gif"]];
     testOffer.offerImage = animatedGif;
     [merchantOfferArray addObject:testOffer];
@@ -77,19 +77,19 @@
     
     OutgoingOffer *testOffer2 = [[OutgoingOffer alloc]init];
     testOffer2.offerExpirationDate = [NSDate date];
-    testOffer2.mealDescription = @"some steaks";
+    testOffer2.mealDescription = @"Eleven Madison Park";
     testOffer2.offerImage = [UIImage imageNamed:@"restaurant1"];
     [merchantOfferArray addObject:testOffer2];
     
     OutgoingOffer *testOffer3 = [[OutgoingOffer alloc]init];
     testOffer3.offerExpirationDate = [NSDate date];
-    testOffer3.mealDescription = @"shit load of steaks";
+    testOffer3.mealDescription = @"Gotham Bar And Grill";
     testOffer3.offerImage = [UIImage imageNamed:@"restaurant2"];
     [merchantOfferArray addObject:testOffer3];
     
     OutgoingOffer *testOffer4 = [[OutgoingOffer alloc]init];
     testOffer4.offerExpirationDate = [NSDate date];
-    testOffer4.mealDescription = @"meh steaks";
+    testOffer4.mealDescription = @"Gramercy Tavern";
     testOffer4.offerImage = [UIImage imageNamed:@"restaurant3"];
     [merchantOfferArray addObject:testOffer4];
 
