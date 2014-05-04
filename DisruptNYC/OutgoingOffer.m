@@ -12,10 +12,13 @@
 
 @synthesize offerId;
 @synthesize mealDescription;
+@synthesize mealName;
 @synthesize offerImage;
 @synthesize offerExpirationDate;
 @synthesize associatedRequestId;
 @synthesize mealDate;
 @synthesize price;
+@synthesize state;
+@synthesize customerName;
 
 @end
