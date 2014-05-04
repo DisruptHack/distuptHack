@@ -31,16 +31,18 @@
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:animatedGif] forBarMetrics:UIBarMetricsDefault];
 
     [self.distanceSlider setThumbImage:[UIImage imageNamed:@"circle-radius"] forState:UIControlStateNormal];
+    [self.distanceSlider  setMinimumTrackImage:[[UIImage imageNamed:@"blue slider bar"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal];
+    [self.distanceSlider  setMaximumTrackImage:[[UIImage imageNamed:@"blue slider bar"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal];
     //[self.distanceSlider set]
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+
 }
+
 
 /*
 #pragma mark - Navigation
