@@ -43,7 +43,6 @@
     [merchantOfferArray addObject:testOffer];
     
     Connection* conn = [[Connection alloc]init];
-    
     [conn testConnection];
 }
 

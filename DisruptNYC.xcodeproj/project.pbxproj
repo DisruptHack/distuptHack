@@ -26,6 +26,8 @@
 		8CDF4DC11915FB10008AF646 /* tooltip-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0051915D7490058F100 /* tooltip-image@2x.png */; };
 		8CDF4DC21915FB10008AF646 /* wine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0061915D7490058F100 /* wine@2x.png */; };
 		8CDF4DC31915FB68008AF646 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
+		8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DC51916000B008AF646 /* ANPopoverSlider.m */; };
+		8CDF4DC91916000B008AF646 /* ANPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DC71916000B008AF646 /* ANPopoverView.m */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
 		8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
@@ -69,6 +71,10 @@
 		8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-invited-button@2x.png"; sourceTree = "<group>"; };
 		8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		8CDF4DC41916000B008AF646 /* ANPopoverSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPopoverSlider.h; sourceTree = "<group>"; };
+		8CDF4DC51916000B008AF646 /* ANPopoverSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPopoverSlider.m; sourceTree = "<group>"; };
+		8CDF4DC61916000B008AF646 /* ANPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPopoverView.h; sourceTree = "<group>"; };
+		8CDF4DC71916000B008AF646 /* ANPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPopoverView.m; sourceTree = "<group>"; };
 		8CF7BF79191584F50058F100 /* DisruptNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisruptNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF7BF7C191584F50058F100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CF7BF7E191584F50058F100 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -159,6 +165,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CDF4DCA19160020008AF646 /* PopoverSlider */ = {
+			isa = PBXGroup;
+			children = (
+				8CDF4DC41916000B008AF646 /* ANPopoverSlider.h */,
+				8CDF4DC51916000B008AF646 /* ANPopoverSlider.m */,
+				8CDF4DC61916000B008AF646 /* ANPopoverView.h */,
+				8CDF4DC71916000B008AF646 /* ANPopoverView.m */,
+			);
+			name = PopoverSlider;
+			sourceTree = "<group>";
+		};
 		8CF7BF70191584F50058F100 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +220,7 @@
 				8CF7BFD51915B64A0058F100 /* Assets */,
 				B073376F191588BD006FBFB9 /* Merchant */,
 				8CF7BFB41915879E0058F100 /* MerchantBidCell.h */,
+				8CDF4DCA19160020008AF646 /* PopoverSlider */,
 				8CF7BFB51915879E0058F100 /* MerchantBidCell.m */,
 				8CF7BF91191584F50058F100 /* MasterViewController.h */,
 				8CF7BF92191584F50058F100 /* MasterViewController.m */,
@@ -423,6 +441,7 @@
 				B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */,
 				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
 				B07337A91915F976006FBFB9 /* CellOwner.m in Sources */,
+				8CDF4DC91916000B008AF646 /* ANPopoverView.m in Sources */,
 				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
 				B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */,
 				B07337A71915F976006FBFB9 /* Cell1.m in Sources */,
@@ -434,6 +453,7 @@
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
+				8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "ANPopoverSlider.h"
+#import "ANPopoverView.h"
 
 @interface RequestForOfferViewController : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UISlider *distanceSlider;
+@property (weak, nonatomic) IBOutlet ANPopoverSlider *distanceSlider;
 
 
 @end
