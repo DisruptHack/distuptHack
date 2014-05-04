@@ -8,6 +8,7 @@
 
 #import "MerchantViewController.h"
 #import "Cell1.h"
+#import "MealTableViewCell.h"
 
 @interface MerchantViewController ()
 
@@ -38,6 +39,7 @@
     UITableView *offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,320,568)];
     offerTableView.delegate = self;
     offerTableView.dataSource = self;
+    offerTableView.tag = 1;
     [self.view addSubview:offerTableView];
 }
 
@@ -46,7 +48,12 @@
     NSLog(@"Accepted, Row %i", ((UIButton *)sender).tag);
     //open meals view
     mealsView = [[UIView alloc] initWithFrame:CGRectMake(30,30,260,260)];
-    mealsView.backgroundColor = [UIColor grayColor];
+    mealsView.backgroundColor = [UIColor lightGrayColor];
+    mealsTableView = [[UITableView alloc] initWithFrame:CGRectMake(1,1,mealsView.frame.size.width-2, mealsView.frame.size.height-50)];
+    mealsTableView.delegate = self;
+    mealsTableView.dataSource = self;
+    mealsTableView.tag = 2;
+    [mealsView addSubview:mealsTableView];
     [self.view addSubview:mealsView];
     
 }
@@ -78,24 +85,30 @@
 	UITableViewCell *cell = nil;
 	
 	Cell1 *cell1;
+    MealTableViewCell *cell2;
 	
-	
+	if (tableView.tag == 1) {
 	
 		NSString *nibName = @"Cell1";
 		[cellOwner loadMyNibFile:nibName];
 		// get a pointer to the loaded cell from the cellOwner and cast it to the appropriate type
 		cell1 = (Cell1 *)cellOwner.cell;
 		//NSLog(@"Loading cell from nib %@", nibName);
-		// set the labels to the appropriate text for this row
-		//NSLog(@"setting labels");
-//		cell1.label2.text = [NSString stringWithFormat:@"%@",aNewsLink.linkTitle];
-//		cell1.image.image = aNewsLink.linkImage;
-    [cell1.acceptButton addTarget:self action:@selector(acceptRequest:) forControlEvents:UIControlEventTouchUpInside];
-    cell1.acceptButton.tag = row;
-    [cell1.denyButton addTarget:self action:@selector(refuseRequest:) forControlEvents:UIControlEventTouchUpInside];
-    cell1.denyButton.tag = row;
+        [cell1.acceptButton addTarget:self action:@selector(acceptRequest:) forControlEvents:UIControlEventTouchUpInside];
+        cell1.acceptButton.tag = row;
+        [cell1.denyButton addTarget:self action:@selector(refuseRequest:) forControlEvents:UIControlEventTouchUpInside];
+        cell1.denyButton.tag = row;
 		cell = cell1;
-		// return the cell which will be either a "Cell1" or "Cell2" object.
+    }
+    if (tableView.tag == 2) {
+        NSString *nibName = @"MealTableViewCell";
+		[cellOwner loadMyNibFile:nibName];
+		// get a pointer to the loaded cell from the cellOwner and cast it to the appropriate type
+		cell2 = (MealTableViewCell *)cellOwner.cell;
+//        [cell2.chooseMealButton addTarget:self action:@selector(acceptRequest:) forControlEvents:UIControlEventTouchUpInside];
+//        cell2.chooseMealButton.tag = row;
+		cell = cell2;
+    }
 		return cell;
 		//NSLog(@"cell returned");
 	

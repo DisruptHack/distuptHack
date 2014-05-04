@@ -48,6 +48,8 @@
 		B073378C1915C6B3006FBFB9 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
 		B07337941915D11F006FBFB9 /* CellOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337901915D11F006FBFB9 /* CellOwner.m */; };
 		B07337951915D11F006FBFB9 /* Cell1.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337921915D11F006FBFB9 /* Cell1.m */; };
+		B073379B1915ECA9006FBFB9 /* MealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337991915ECA9006FBFB9 /* MealTableViewCell.m */; };
+		B073379C1915ECA9006FBFB9 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B073379A1915ECA9006FBFB9 /* MealTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,9 @@
 		B07337921915D11F006FBFB9 /* Cell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell1.m; sourceTree = "<group>"; };
 		B07337931915D11F006FBFB9 /* CellOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOwner.h; sourceTree = "<group>"; };
 		B07337961915D178006FBFB9 /* Cell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell1.xib; sourceTree = "<group>"; };
+		B07337981915ECA9006FBFB9 /* MealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealTableViewCell.h; sourceTree = "<group>"; };
+		B07337991915ECA9006FBFB9 /* MealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealTableViewCell.m; sourceTree = "<group>"; };
+		B073379A1915ECA9006FBFB9 /* MealTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +282,9 @@
 				B073377D19159242006FBFB9 /* OutgoingOffer.m */,
 				B073378419159F87006FBFB9 /* Merchant.h */,
 				B073378519159F87006FBFB9 /* Merchant.m */,
+				B07337981915ECA9006FBFB9 /* MealTableViewCell.h */,
+				B07337991915ECA9006FBFB9 /* MealTableViewCell.m */,
+				B073379A1915ECA9006FBFB9 /* MealTableViewCell.xib */,
 			);
 			name = Merchant;
 			sourceTree = "<group>";
@@ -379,6 +387,7 @@
 				8CF7C00E1915D7490058F100 /* greybackground-doubleslider@2x.png in Resources */,
 				8CF7C00F1915D7490058F100 /* japanese-button@2x.png in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
+				B073379C1915ECA9006FBFB9 /* MealTableViewCell.xib in Resources */,
 				8CF7C0131915D7490058F100 /* tooltip-image@2x.png in Resources */,
 				8CF7C0071915D7490058F100 /* american-button@2x.png in Resources */,
 				8CF7C0141915D7490058F100 /* wine@2x.png in Resources */,
@@ -400,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B073379B1915ECA9006FBFB9 /* MealTableViewCell.m in Sources */,
 				B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */,
 				B073378C1915C6B3006FBFB9 /* IncomingRequest.m in Sources */,
 				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
