@@ -74,6 +74,23 @@
 		8CF7BFC11915A2330058F100 /* RequestForOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestForOfferViewController.h; sourceTree = "<group>"; };
 		8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestForOfferViewController.m; sourceTree = "<group>"; };
 		8CF7BFD31915B6430058F100 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		8CF7BFD71915CBDC0058F100 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8CF7BFD91915D4630058F100 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		8CF7BFDA1915D4630058F100 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		8CF7BFDD1915D6460058F100 /* american-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "american-button.png"; sourceTree = "<group>"; };
+		8CF7BFDE1915D6460058F100 /* blue slider bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue slider bar.png"; sourceTree = "<group>"; };
+		8CF7BFDF1915D6460058F100 /* blue-doubleslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-doubleslider.png"; sourceTree = "<group>"; };
+		8CF7BFE01915D6460058F100 /* circle-radius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-radius.png"; sourceTree = "<group>"; };
+		8CF7BFE11915D6460058F100 /* double-slider-controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "double-slider-controller.png"; sourceTree = "<group>"; };
+		8CF7BFE21915D6460058F100 /* grey bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey bar.png"; sourceTree = "<group>"; };
+		8CF7BFE31915D6460058F100 /* grey-cuisine-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-cuisine-background.png"; sourceTree = "<group>"; };
+		8CF7BFE41915D6460058F100 /* greybackground-doubleslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greybackground-doubleslider.png"; sourceTree = "<group>"; };
+		8CF7BFE51915D6460058F100 /* japanese-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "japanese-button.png"; sourceTree = "<group>"; };
+		8CF7BFE61915D6460058F100 /* large-grey-bckrnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "large-grey-bckrnd.png"; sourceTree = "<group>"; };
+		8CF7BFE71915D6460058F100 /* request-dinner-invitations-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request-dinner-invitations-header.png"; sourceTree = "<group>"; };
+		8CF7BFE81915D6460058F100 /* seafood-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seafood-button.png"; sourceTree = "<group>"; };
+		8CF7BFE91915D6460058F100 /* tooltip-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tooltip-image.png"; sourceTree = "<group>"; };
+		8CF7BFEA1915D6460058F100 /* wine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wine.png; sourceTree = "<group>"; };
 		B07337761915896B006FBFB9 /* IncomingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingRequest.h; sourceTree = "<group>"; };
 		B07337771915896B006FBFB9 /* IncomingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingRequest.m; sourceTree = "<group>"; };
 		B073377919158E89006FBFB9 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
@@ -140,6 +157,7 @@
 		8CF7BF7B191584F50058F100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CF7BFD71915CBDC0058F100 /* QuartzCore.framework */,
 				8CF7BFBF1915A14D0058F100 /* MapKit.framework */,
 				8CF7BF7C191584F50058F100 /* Foundation.framework */,
 				8CF7BF7E191584F50058F100 /* CoreGraphics.framework */,
@@ -204,9 +222,39 @@
 		8CF7BFD51915B64A0058F100 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8CF7BFDD1915D6460058F100 /* american-button.png */,
+				8CF7BFDE1915D6460058F100 /* blue slider bar.png */,
+				8CF7BFDF1915D6460058F100 /* blue-doubleslider.png */,
+				8CF7BFE01915D6460058F100 /* circle-radius.png */,
+				8CF7BFE11915D6460058F100 /* double-slider-controller.png */,
+				8CF7BFE21915D6460058F100 /* grey bar.png */,
+				8CF7BFE31915D6460058F100 /* grey-cuisine-background.png */,
+				8CF7BFE41915D6460058F100 /* greybackground-doubleslider.png */,
+				8CF7BFE51915D6460058F100 /* japanese-button.png */,
+				8CF7BFE61915D6460058F100 /* large-grey-bckrnd.png */,
+				8CF7BFE71915D6460058F100 /* request-dinner-invitations-header.png */,
+				8CF7BFE81915D6460058F100 /* seafood-button.png */,
+				8CF7BFE91915D6460058F100 /* tooltip-image.png */,
+				8CF7BFEA1915D6460058F100 /* wine.png */,
 				8CF7BFD31915B6430058F100 /* test.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		8CF7BFD61915C8830058F100 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		8CF7BFDC1915D46E0058F100 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				8CF7BFD91915D4630058F100 /* UIImage+animatedGIF.h */,
+				8CF7BFDA1915D4630058F100 /* UIImage+animatedGIF.m */,
+			);
+			name = categories;
 			sourceTree = "<group>";
 		};
 		B073376F191588BD006FBFB9 /* Merchant */ = {
@@ -318,6 +366,10 @@
 			files = (
 				B07337971915D178006FBFB9 /* Cell1.xib in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
+				8CF7BFF51915D6460058F100 /* request-dinner-invitations-header.png in Resources */,
+				8CF7BFF31915D6460058F100 /* japanese-button.png in Resources */,
+				8CF7BFEC1915D6460058F100 /* blue slider bar.png in Resources */,
+				8CF7BFEE1915D6460058F100 /* circle-radius.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
 				B073378F1915C915006FBFB9 /* MerchantView~iphone.xib in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
