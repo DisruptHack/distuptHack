@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MealTableViewCell : UITableViewCell
+@interface MealTableViewCell : UITableViewCell {
+    UILabel *title;
+    UIImage *mealImage;
+    UILabel *price;
+}
 
 @end

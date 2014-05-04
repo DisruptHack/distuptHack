@@ -190,7 +190,10 @@
 	NSUInteger row = [indexPath row];
 	NSLog(@"Setting up cell %i", row);
 	
-    return 90;
+    if (tableView.tag == 1)
+        return 90;
+    else
+        return 70;
 	
 }
 
