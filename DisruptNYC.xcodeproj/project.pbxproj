@@ -37,6 +37,15 @@
 		8CDF4DEC19161F4F008AF646 /* restaurant3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DE919161F4F008AF646 /* restaurant3@2x.png */; };
 		8CDF4DEF19162CDE008AF646 /* Restaurant Single View@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DED19162CDE008AF646 /* Restaurant Single View@2x.png */; };
 		8CDF4DF019162CDE008AF646 /* Description + Menu (bottom part)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DEE19162CDE008AF646 /* Description + Menu (bottom part)@2x.png */; };
+		8CDF4DFB191637CB008AF646 /* 02_distance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */; };
+		8CDF4DFC191637CB008AF646 /* 02_dividers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */; };
+		8CDF4DFD191637CB008AF646 /* 02_food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF4191637CB008AF646 /* 02_food@2x.png */; };
+		8CDF4DFE191637CB008AF646 /* 02_get invited_tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF5191637CB008AF646 /* 02_get invited_tap@2x.png */; };
+		8CDF4DFF191637CB008AF646 /* 02_get_invited@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF6191637CB008AF646 /* 02_get_invited@2x.png */; };
+		8CDF4E00191637CB008AF646 /* 02_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF7191637CB008AF646 /* 02_header@2x.png */; };
+		8CDF4E01191637CB008AF646 /* 02_set location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF8191637CB008AF646 /* 02_set location@2x.png */; };
+		8CDF4E02191637CB008AF646 /* 02_time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF9191637CB008AF646 /* 02_time@2x.png */; };
+		8CDF4E03191637CB008AF646 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DFA191637CB008AF646 /* bg@2x.png */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
 		8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
@@ -102,6 +111,15 @@
 		8CDF4DE919161F4F008AF646 /* restaurant3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restaurant3@2x.png"; sourceTree = "<group>"; };
 		8CDF4DED19162CDE008AF646 /* Restaurant Single View@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restaurant Single View@2x.png"; sourceTree = "<group>"; };
 		8CDF4DEE19162CDE008AF646 /* Description + Menu (bottom part)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Description + Menu (bottom part)@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_distance@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_dividers@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF4191637CB008AF646 /* 02_food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_food@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF5191637CB008AF646 /* 02_get invited_tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_get invited_tap@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF6191637CB008AF646 /* 02_get_invited@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_get_invited@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF7191637CB008AF646 /* 02_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_header@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF8191637CB008AF646 /* 02_set location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_set location@2x.png"; sourceTree = "<group>"; };
+		8CDF4DF9191637CB008AF646 /* 02_time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_time@2x.png"; sourceTree = "<group>"; };
+		8CDF4DFA191637CB008AF646 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		8CF7BF79191584F50058F100 /* DisruptNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisruptNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF7BF7C191584F50058F100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CF7BF7E191584F50058F100 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -233,6 +251,31 @@
 			name = dummyMerchantImages;
 			sourceTree = "<group>";
 		};
+		8CDF4DF1191637B5008AF646 /* oldAssets */ = {
+			isa = PBXGroup;
+			children = (
+				8CDF4DE519161EA7008AF646 /* time@2x.png */,
+				8CDF4DD0191619BD008AF646 /* accept@2x.png */,
+				8CDF4DCD19160E6D008AF646 /* city-image@2x.png */,
+				8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */,
+				8CF7BFF91915D7490058F100 /* american-button@2x.png */,
+				8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */,
+				8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */,
+				8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */,
+				8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */,
+				8CF7BFFE1915D7490058F100 /* grey bar@2x.png */,
+				8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */,
+				8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */,
+				8CF7C0011915D7490058F100 /* japanese-button@2x.png */,
+				8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */,
+				8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */,
+				8CF7C0041915D7490058F100 /* seafood-button@2x.png */,
+				8CF7C0051915D7490058F100 /* tooltip-image@2x.png */,
+				8CF7C0061915D7490058F100 /* wine@2x.png */,
+			);
+			name = oldAssets;
+			sourceTree = "<group>";
+		};
 		8CF7BF70191584F50058F100 = {
 			isa = PBXGroup;
 			children = (
@@ -324,24 +367,16 @@
 		8CF7BFD51915B64A0058F100 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8CDF4DE519161EA7008AF646 /* time@2x.png */,
-				8CDF4DD0191619BD008AF646 /* accept@2x.png */,
-				8CDF4DCD19160E6D008AF646 /* city-image@2x.png */,
-				8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */,
-				8CF7BFF91915D7490058F100 /* american-button@2x.png */,
-				8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */,
-				8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */,
-				8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */,
-				8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */,
-				8CF7BFFE1915D7490058F100 /* grey bar@2x.png */,
-				8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */,
-				8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */,
-				8CF7C0011915D7490058F100 /* japanese-button@2x.png */,
-				8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */,
-				8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */,
-				8CF7C0041915D7490058F100 /* seafood-button@2x.png */,
-				8CF7C0051915D7490058F100 /* tooltip-image@2x.png */,
-				8CF7C0061915D7490058F100 /* wine@2x.png */,
+				8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */,
+				8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */,
+				8CDF4DF4191637CB008AF646 /* 02_food@2x.png */,
+				8CDF4DF5191637CB008AF646 /* 02_get invited_tap@2x.png */,
+				8CDF4DF6191637CB008AF646 /* 02_get_invited@2x.png */,
+				8CDF4DF7191637CB008AF646 /* 02_header@2x.png */,
+				8CDF4DF8191637CB008AF646 /* 02_set location@2x.png */,
+				8CDF4DF9191637CB008AF646 /* 02_time@2x.png */,
+				8CDF4DFA191637CB008AF646 /* bg@2x.png */,
+				8CDF4DF1191637B5008AF646 /* oldAssets */,
 				8CDF4DD819161BF2008AF646 /* dummyMerchantImages */,
 			);
 			name = Assets;
@@ -480,25 +515,33 @@
 				8CDF4DB71915FB10008AF646 /* blue-doubleslider@2x.png in Resources */,
 				8CDF4DF019162CDE008AF646 /* Description + Menu (bottom part)@2x.png in Resources */,
 				B07337AE19160AA5006FBFB9 /* OfferBuilderView.xib in Resources */,
+				8CDF4DFD191637CB008AF646 /* 02_food@2x.png in Resources */,
 				8CDF4DEA19161F4F008AF646 /* restaurant2@2x.png in Resources */,
 				8CDF4DB81915FB10008AF646 /* circle-radius@2x.png in Resources */,
 				8CDF4DB91915FB10008AF646 /* double-slider-controller@2x.png in Resources */,
+				8CDF4DFE191637CB008AF646 /* 02_get invited_tap@2x.png in Resources */,
 				8CDF4DCE19160E6D008AF646 /* city-image@2x.png in Resources */,
+				8CDF4E03191637CB008AF646 /* bg@2x.png in Resources */,
 				B07337B5191626F5006FBFB9 /* meal3.png in Resources */,
 				8CDF4DBA1915FB10008AF646 /* grey bar@2x.png in Resources */,
 				8CDF4DBB1915FB10008AF646 /* grey-cuisine-background@2x.png in Resources */,
+				8CDF4E00191637CB008AF646 /* 02_header@2x.png in Resources */,
 				8CDF4DBC1915FB10008AF646 /* greybackground-doubleslider@2x.png in Resources */,
+				8CDF4DFC191637CB008AF646 /* 02_dividers@2x.png in Resources */,
 				8CDF4DBD1915FB10008AF646 /* japanese-button@2x.png in Resources */,
 				8CDF4DBE1915FB10008AF646 /* large-grey-bckrnd@2x.png in Resources */,
 				8CDF4DBF1915FB10008AF646 /* request-dinner-invitations-header@2x.png in Resources */,
+				8CDF4E02191637CB008AF646 /* 02_time@2x.png in Resources */,
 				8CDF4DC01915FB10008AF646 /* seafood-button@2x.png in Resources */,
 				B07337B6191626F5006FBFB9 /* meal2.png in Resources */,
 				8CDF4DC11915FB10008AF646 /* tooltip-image@2x.png in Resources */,
 				8CDF4DC21915FB10008AF646 /* wine@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
 				8CDF4DEB19161F4F008AF646 /* restaurant1@2x.png in Resources */,
+				8CDF4DFB191637CB008AF646 /* 02_distance@2x.png in Resources */,
 				B07337A61915F976006FBFB9 /* Cell1.xib in Resources */,
 				8CDF4DE619161EA7008AF646 /* time@2x.png in Resources */,
+				8CDF4E01191637CB008AF646 /* 02_set location@2x.png in Resources */,
 				8CDF4DD1191619BD008AF646 /* accept@2x.png in Resources */,
 				8CDF4DEF19162CDE008AF646 /* Restaurant Single View@2x.png in Resources */,
 				8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */,
@@ -506,6 +549,7 @@
 				B07337B4191626F5006FBFB9 /* meal4.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
+				8CDF4DFF191637CB008AF646 /* 02_get_invited@2x.png in Resources */,
 				B073379C1915ECA9006FBFB9 /* MealTableViewCell.xib in Resources */,
 				8CDF4DEC19161F4F008AF646 /* restaurant3@2x.png in Resources */,
 			);
@@ -546,7 +590,6 @@
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
 				B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */,
-				8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
