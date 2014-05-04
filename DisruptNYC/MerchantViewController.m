@@ -118,8 +118,15 @@
     [refreshButton setTitle:@"Refresh" forState:UIControlStateNormal];
     refreshButton.frame = CGRectMake(190.0, 528, 100, 40.0);
     [self.view addSubview:refreshButton];
+    
+}
 
-
+-(void)viewDidAppear:(BOOL)animated {
+    
+    if (peerStartedBrowsing == NO) {
+        [self startBrowsingForPeers];
+        peerStartedBrowsing = YES;
+    }
 }
 
 - (IBAction)acceptRequest:(id)sender {
@@ -176,6 +183,7 @@
 
 -(IBAction)sendOffer:(id)sender {
     NSLog(@"send offer");
+    [self sendData];
     //test update status
     OutgoingOffer *tempOffer = [requests objectAtIndex:offerIndex];
     tempOffer.status = 2;
@@ -464,9 +472,10 @@
 
 -(void) sendData
 {
-    NSLog(@"Sending data %@", _offers.text);
+   NSString *test = @"Test Message";
+    NSLog(@"Sending data %@", test);
     NSError *error = [[NSError alloc] init];
-    [_mcSession sendData:[_offers.text dataUsingEncoding:NSASCIIStringEncoding] toPeers:_peers withMode:MCSessionSendDataReliable error:&error];
+    [_mcSession sendData:[test dataUsingEncoding:NSASCIIStringEncoding] toPeers:_peers withMode:MCSessionSendDataReliable error:&error];
 }
 
 -(void) browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController

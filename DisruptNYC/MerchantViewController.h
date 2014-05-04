@@ -25,6 +25,7 @@
     UITableView *offerTableView;
     UIView *mealsView;
     int offerIndex;
+    BOOL peerStartedBrowsing;
 }
 
 @property (nonatomic, retain) NSMutableArray *incomingRequests;
