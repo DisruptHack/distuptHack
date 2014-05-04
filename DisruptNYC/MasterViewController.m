@@ -35,7 +35,8 @@
     testOffer.offerExpirationDate = [NSDate date];
 
     testOffer.mealDescription = @"Many steaks";
-    testOffer.offerImage = [UIImage imageNamed:@"test"];
+    UIImage *animatedGif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://37.media.tumblr.com/tumblr_lx9qvrIYEx1qe5q3go1_500.gif"]];
+    testOffer.offerImage = animatedGif;//[UIImage imageNamed:@"test"];
     [merchantOfferArray addObject:testOffer];
     [merchantOfferArray addObject:testOffer];
     [merchantOfferArray addObject:testOffer];
