@@ -8,6 +8,7 @@
 #define kMerchantBidCellResuseIdentifier @"MerchantBidCell"
 
 #import <QuartzCore/QuartzCore.h>
+#import "UIImage+animatedGIF.h"
 #import "MasterViewController.h"
 #import "MerchantBidCell.h"
 #import "MerchantViewController.h"

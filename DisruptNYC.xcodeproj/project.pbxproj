@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
-		8CDF4DAF1915E753008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
+		8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
+		8CDF4DB11915F225008AF646 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
+		8CDF4DB21915F232008AF646 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
+		8CDF4DB31915F232008AF646 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
 		8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
@@ -28,7 +31,6 @@
 		B073378619159F87006FBFB9 /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B073378519159F87006FBFB9 /* Merchant.m */; };
 		B0C8B9CB1915BBE100F1C592 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
 		B0C8B9CC1915BBFA00F1C592 /* RequestForOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */; };
-		B0C8B9CD1915BC7400F1C592 /* OutgoingOffer.h in Sources */ = {isa = PBXBuildFile; fileRef = B073377C19159242006FBFB9 /* OutgoingOffer.h */; };
 		B0C8B9CE1915BC7400F1C592 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
 		B0C8B9D21915BFF200F1C592 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
 		B0C8B9D31915BFF200F1C592 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
@@ -165,11 +167,10 @@
 		8CF7BF82191584F50058F100 /* DisruptNYC */ = {
 			isa = PBXGroup;
 			children = (
-				B073378D1915C885006FBFB9 /* iPad */,
 				8CF7BF8B191584F50058F100 /* AppDelegate.h */,
+				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */,
 				8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */,
-				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CF7BF8E191584F50058F100 /* Main.storyboard */,
 				8CF7BFD51915B64A0058F100 /* Assets */,
 				B073376F191588BD006FBFB9 /* Merchant */,
@@ -241,15 +242,9 @@
 		B073376F191588BD006FBFB9 /* Merchant */ = {
 			isa = PBXGroup;
 			children = (
-				B07337961915D178006FBFB9 /* Cell1.xib */,
-				B07337931915D11F006FBFB9 /* CellOwner.h */,
-				B07337901915D11F006FBFB9 /* CellOwner.m */,
-				B07337911915D11F006FBFB9 /* Cell1.h */,
-				B07337921915D11F006FBFB9 /* Cell1.m */,
 				B073377F191596F3006FBFB9 /* MerchantViewController.h */,
 				B0733780191596F3006FBFB9 /* MerchantViewController.m */,
 				B0733781191596F3006FBFB9 /* MerchantView~ipad.xib */,
-				B073378E1915C915006FBFB9 /* MerchantView~iphone.xib */,
 				B07337761915896B006FBFB9 /* IncomingRequest.h */,
 				B07337771915896B006FBFB9 /* IncomingRequest.m */,
 				B073377919158E89006FBFB9 /* Meal.h */,
@@ -347,24 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7C0091915D7490058F100 /* blue-doubleslider@2x.png in Resources */,
-				8CF7C00C1915D7490058F100 /* grey bar@2x.png in Resources */,
-				8CF7C00D1915D7490058F100 /* grey-cuisine-background@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
-				8CF7C0081915D7490058F100 /* blue slider bar@2x.png in Resources */,
-				8CF7C0101915D7490058F100 /* large-grey-bckrnd@2x.png in Resources */,
-				8CF7C0121915D7490058F100 /* seafood-button@2x.png in Resources */,
 				8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */,
-				8CF7C00A1915D7490058F100 /* circle-radius@2x.png in Resources */,
-				8CF7C00B1915D7490058F100 /* double-slider-controller@2x.png in Resources */,
-				8CF7C0111915D7490058F100 /* request-dinner-invitations-header@2x.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
-				8CF7C00E1915D7490058F100 /* greybackground-doubleslider@2x.png in Resources */,
-				8CF7C00F1915D7490058F100 /* japanese-button@2x.png in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
-				8CF7C0131915D7490058F100 /* tooltip-image@2x.png in Resources */,
-				8CF7C0071915D7490058F100 /* american-button@2x.png in Resources */,
-				8CF7C0141915D7490058F100 /* wine@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +364,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C8B9CD1915BC7400F1C592 /* OutgoingOffer.h in Sources */,
+				8CDF4DB21915F232008AF646 /* IncomingRequest.m in Sources */,
+				8CDF4DB31915F232008AF646 /* Meal.m in Sources */,
+				8CDF4DB11915F225008AF646 /* MerchantViewController.m in Sources */,
+				8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */,
 				B0C8B9CE1915BC7400F1C592 /* OutgoingOffer.m in Sources */,
 				B0C8B9CC1915BBFA00F1C592 /* RequestForOfferViewController.m in Sources */,
 				8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */,
