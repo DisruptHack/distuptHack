@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "OutgoingOffer.h"
+#import "Connection.h"
 
 @interface MasterViewController : UITableViewController
 

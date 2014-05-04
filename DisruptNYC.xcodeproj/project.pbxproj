@@ -23,12 +23,13 @@
 		8CF7BFA9191584F50058F100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFA7191584F50058F100 /* InfoPlist.strings */; };
 		8CF7BFAB191584F50058F100 /* DisruptNYCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */; };
 		8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFB51915879E0058F100 /* MerchantBidCell.m */; };
-		B07337781915896B006FBFB9 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
-		B073377B19158E89006FBFB9 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
-		B073377E19159242006FBFB9 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
-		B0733782191596F3006FBFB9 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
-		B0733783191596F3006FBFB9 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0733781191596F3006FBFB9 /* MerchantViewController.xib */; };
 		B073378619159F87006FBFB9 /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B073378519159F87006FBFB9 /* Merchant.m */; };
+		B0C8B9CB1915BBE100F1C592 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
+		B0C8B9CC1915BBFA00F1C592 /* RequestForOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */; };
+		B0C8B9CD1915BC7400F1C592 /* OutgoingOffer.h in Sources */ = {isa = PBXBuildFile; fileRef = B073377C19159242006FBFB9 /* OutgoingOffer.h */; };
+		B0C8B9CE1915BC7400F1C592 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
+		B0C8B9D21915BFF200F1C592 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
+		B0C8B9D31915BFF200F1C592 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		B0733781191596F3006FBFB9 /* MerchantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
 		B073378419159F87006FBFB9 /* Merchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
 		B073378519159F87006FBFB9 /* Merchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
+		B0C8B9D01915BFF200F1C592 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		B0C8B9D11915BFF200F1C592 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7BFC01915A14D0058F100 /* MapKit.framework in Frameworks */,
-				8CF7BFBE191599C60058F100 /* (null) in Frameworks */,
+				B0C8B9CB1915BBE100F1C592 /* MapKit.framework in Frameworks */,
 				8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */,
 				8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */,
 				8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */,
@@ -110,6 +112,7 @@
 		8CF7BF70191584F50058F100 = {
 			isa = PBXGroup;
 			children = (
+				B0C8B9CF1915BD4F00F1C592 /* APICalls */,
 				8CF7BF82191584F50058F100 /* DisruptNYC */,
 				8CF7BFA4191584F50058F100 /* DisruptNYCTests */,
 				8CF7BF7B191584F50058F100 /* Frameworks */,
@@ -204,6 +207,15 @@
 				B073378519159F87006FBFB9 /* Merchant.m */,
 			);
 			name = Merchant;
+			sourceTree = "<group>";
+		};
+		B0C8B9CF1915BD4F00F1C592 /* APICalls */ = {
+			isa = PBXGroup;
+			children = (
+				B0C8B9D01915BFF200F1C592 /* Connection.h */,
+				B0C8B9D11915BFF200F1C592 /* Connection.m */,
+			);
+			name = APICalls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,17 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7BFC51915A6EE0058F100 /* MerchantViewController.m in Sources */,
-				8CF7BFC61915A6EE0058F100 /* MerchantViewController.xib in Sources */,
-				8CF7BFC81915A6EE0058F100 /* IncomingRequest.m in Sources */,
-				8CF7BFCA1915A6EE0058F100 /* Meal.m in Sources */,
-				8CF7BFCC1915A6EE0058F100 /* OutgoingOffer.m in Sources */,
+				B0C8B9CD1915BC7400F1C592 /* OutgoingOffer.h in Sources */,
+				B0C8B9CE1915BC7400F1C592 /* OutgoingOffer.m in Sources */,
+				B0C8B9CC1915BBFA00F1C592 /* RequestForOfferViewController.m in Sources */,
 				8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */,
 				8CF7BF8D191584F50058F100 /* AppDelegate.m in Sources */,
 				8CF7BF93191584F50058F100 /* MasterViewController.m in Sources */,
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
+				B0C8B9D21915BFF200F1C592 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF7BFAB191584F50058F100 /* DisruptNYCTests.m in Sources */,
+				B0C8B9D31915BFF200F1C592 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -427,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -12,6 +12,7 @@
 
 #import "DetailViewController.h"
 
+
 @interface MasterViewController () {
     NSMutableArray *merchantOfferArray;
 }
@@ -31,6 +32,10 @@
     testOffer.offerExpirationDate = [NSDate new];
     testOffer.mealDescription = @"Many steaks";
     [merchantOfferArray addObject:testOffer];
+    
+    Connection* conn = [[Connection alloc]init];
+    
+    [conn testConnection];
 }
 
 - (void)didReceiveMemoryWarning
