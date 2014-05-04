@@ -44,6 +44,9 @@
     NSArray *sampleTimes = [[NSArray alloc] initWithObjects:@"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM", @"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM", nil];
     NSArray *sampleNames = [[NSArray alloc] initWithObjects:@"User 34",@"Luis S. Alexander",@"Howard S. Beach",@"Sandra T. Tucker", @"Emily R. Miller",@"Gene L. Arnold",@"Tommie P. Valenzuela", nil];
     
+    NSArray *sampleUserImages = [[NSArray alloc] initWithObjects:@"photo2.png",@"photo3.png",@"photo4.png",@"photo6.png", @"photo7.png",@"photo7.png",@"photo2.png", nil];
+    
+    
     NSArray *sampleMealPrices = [[NSArray alloc] initWithObjects:@"$100.00",@"$75.00",@"$50.00",@"$35.00", nil];
     
     NSArray *sampleMealNames = [[NSArray alloc] initWithObjects:@"Dinner,Wine, Dessert",@"App, Dinner, Dessert",@"App & Dinner",@"Dinner", nil];
@@ -57,7 +60,8 @@
         tempOffer.price = [samplePrices objectAtIndex:i];
         tempOffer.mealDate = [sampleTimes objectAtIndex:i];
         tempOffer.customerName = [sampleNames objectAtIndex:i];
-        tempOffer.state = 0;
+        tempOffer.status = 0;
+        tempOffer.userImage = [UIImage imageNamed:[sampleUserImages objectAtIndex:i]];
         [requests addObject:tempOffer];
     }
     
@@ -184,6 +188,17 @@
         cell1.name.text = tempOffer.customerName;
         cell1.price.text = tempOffer.price;
         cell1.time.text = tempOffer.mealDate;
+        cell1.userImage.image = tempOffer.userImage;
+        
+        if (tempOffer.status == 0) {
+            cell1.statusLabel.hidden = YES;
+        }
+        if (tempOffer.status == 1) {
+            cell1.statusLabel.hidden = NO;
+            cell1.statusLabel.backgroundColor = [UIColor greenColor];
+            cell1.statusLabel.textColor = [UIColor whiteColor];
+            cell1.statusLabel.text = @"ACCEPTED";
+        }
         
 		cell = cell1;
     }
@@ -280,7 +295,7 @@
 	NSLog(@"Setting up cell %i", row);
 	
     if (tableView.tag == 1)
-        return 90;
+        return 60;
     else
         return 70;
 	

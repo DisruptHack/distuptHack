@@ -70,6 +70,15 @@
 		B07337B5191626F5006FBFB9 /* meal3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B1191626F5006FBFB9 /* meal3.png */; };
 		B07337B6191626F5006FBFB9 /* meal2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B2191626F5006FBFB9 /* meal2.png */; };
 		B07337B7191626F5006FBFB9 /* meal1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B3191626F5006FBFB9 /* meal1.png */; };
+		B07337C219163CA9006FBFB9 /* Merchant View.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B919163CA8006FBFB9 /* Merchant View.png */; };
+		B07337C319163CA9006FBFB9 /* delete-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BA19163CA8006FBFB9 /* delete-icon.png */; };
+		B07337C419163CA9006FBFB9 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BC19163CA9006FBFB9 /* photo3.png */; };
+		B07337C519163CA9006FBFB9 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BD19163CA9006FBFB9 /* photo2.png */; };
+		B07337C619163CA9006FBFB9 /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BE19163CA9006FBFB9 /* photo4.png */; };
+		B07337C719163CA9006FBFB9 /* photo6.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337BF19163CA9006FBFB9 /* photo6.png */; };
+		B07337C819163CA9006FBFB9 /* photo7.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337C019163CA9006FBFB9 /* photo7.png */; };
+		B07337C919163CA9006FBFB9 /* photo8.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337C119163CA9006FBFB9 /* photo8.png */; };
+		B07337CB191640B3006FBFB9 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337CA191640B3006FBFB9 /* carrot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +179,15 @@
 		B07337B1191626F5006FBFB9 /* meal3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal3.png; sourceTree = "<group>"; };
 		B07337B2191626F5006FBFB9 /* meal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal2.png; sourceTree = "<group>"; };
 		B07337B3191626F5006FBFB9 /* meal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal1.png; sourceTree = "<group>"; };
+		B07337B919163CA8006FBFB9 /* Merchant View.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Merchant View.png"; sourceTree = "<group>"; };
+		B07337BA19163CA8006FBFB9 /* delete-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-icon.png"; sourceTree = "<group>"; };
+		B07337BC19163CA9006FBFB9 /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
+		B07337BD19163CA9006FBFB9 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
+		B07337BE19163CA9006FBFB9 /* photo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo4.png; sourceTree = "<group>"; };
+		B07337BF19163CA9006FBFB9 /* photo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo6.png; sourceTree = "<group>"; };
+		B07337C019163CA9006FBFB9 /* photo7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo7.png; sourceTree = "<group>"; };
+		B07337C119163CA9006FBFB9 /* photo8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo8.png; sourceTree = "<group>"; };
+		B07337CA191640B3006FBFB9 /* carrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrot.png; sourceTree = "<group>"; };
 		B0C8B9D01915BFF200F1C592 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
 		B0C8B9D11915BFF200F1C592 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -350,6 +368,7 @@
 		B073376F191588BD006FBFB9 /* Merchant */ = {
 			isa = PBXGroup;
 			children = (
+				B07337B819163C6C006FBFB9 /* Merchant Assets */,
 				B07337AF191626DC006FBFB9 /* Meal Images */,
 				B07337A01915F976006FBFB9 /* Cell1.xib */,
 				B07337A11915F976006FBFB9 /* Cell1.h */,
@@ -387,6 +406,30 @@
 				B07337B3191626F5006FBFB9 /* meal1.png */,
 			);
 			name = "Meal Images";
+			sourceTree = "<group>";
+		};
+		B07337B819163C6C006FBFB9 /* Merchant Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B07337CA191640B3006FBFB9 /* carrot.png */,
+				B07337B919163CA8006FBFB9 /* Merchant View.png */,
+				B07337BA19163CA8006FBFB9 /* delete-icon.png */,
+				B07337BB19163CA9006FBFB9 /* photos */,
+			);
+			name = "Merchant Assets";
+			sourceTree = "<group>";
+		};
+		B07337BB19163CA9006FBFB9 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				B07337BC19163CA9006FBFB9 /* photo3.png */,
+				B07337BD19163CA9006FBFB9 /* photo2.png */,
+				B07337BE19163CA9006FBFB9 /* photo4.png */,
+				B07337BF19163CA9006FBFB9 /* photo6.png */,
+				B07337C019163CA9006FBFB9 /* photo7.png */,
+				B07337C119163CA9006FBFB9 /* photo8.png */,
+			);
+			path = photos;
 			sourceTree = "<group>";
 		};
 		B0C8B9CF1915BD4F00F1C592 /* APICalls */ = {
@@ -476,10 +519,14 @@
 			files = (
 				8CDF4DB51915FB10008AF646 /* american-button@2x.png in Resources */,
 				8CDF4DB61915FB10008AF646 /* blue slider bar@2x.png in Resources */,
+				B07337C219163CA9006FBFB9 /* Merchant View.png in Resources */,
+				B07337C419163CA9006FBFB9 /* photo3.png in Resources */,
 				B07337B7191626F5006FBFB9 /* meal1.png in Resources */,
+				B07337C719163CA9006FBFB9 /* photo6.png in Resources */,
 				8CDF4DB71915FB10008AF646 /* blue-doubleslider@2x.png in Resources */,
 				8CDF4DF019162CDE008AF646 /* Description + Menu (bottom part)@2x.png in Resources */,
 				B07337AE19160AA5006FBFB9 /* OfferBuilderView.xib in Resources */,
+				B07337C819163CA9006FBFB9 /* photo7.png in Resources */,
 				8CDF4DEA19161F4F008AF646 /* restaurant2@2x.png in Resources */,
 				8CDF4DB81915FB10008AF646 /* circle-radius@2x.png in Resources */,
 				8CDF4DB91915FB10008AF646 /* double-slider-controller@2x.png in Resources */,
@@ -487,15 +534,19 @@
 				B07337B5191626F5006FBFB9 /* meal3.png in Resources */,
 				8CDF4DBA1915FB10008AF646 /* grey bar@2x.png in Resources */,
 				8CDF4DBB1915FB10008AF646 /* grey-cuisine-background@2x.png in Resources */,
+				B07337C919163CA9006FBFB9 /* photo8.png in Resources */,
 				8CDF4DBC1915FB10008AF646 /* greybackground-doubleslider@2x.png in Resources */,
+				B07337C319163CA9006FBFB9 /* delete-icon.png in Resources */,
 				8CDF4DBD1915FB10008AF646 /* japanese-button@2x.png in Resources */,
 				8CDF4DBE1915FB10008AF646 /* large-grey-bckrnd@2x.png in Resources */,
 				8CDF4DBF1915FB10008AF646 /* request-dinner-invitations-header@2x.png in Resources */,
 				8CDF4DC01915FB10008AF646 /* seafood-button@2x.png in Resources */,
+				B07337CB191640B3006FBFB9 /* carrot.png in Resources */,
 				B07337B6191626F5006FBFB9 /* meal2.png in Resources */,
 				8CDF4DC11915FB10008AF646 /* tooltip-image@2x.png in Resources */,
 				8CDF4DC21915FB10008AF646 /* wine@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
+				B07337C519163CA9006FBFB9 /* photo2.png in Resources */,
 				8CDF4DEB19161F4F008AF646 /* restaurant1@2x.png in Resources */,
 				B07337A61915F976006FBFB9 /* Cell1.xib in Resources */,
 				8CDF4DE619161EA7008AF646 /* time@2x.png in Resources */,
@@ -506,6 +557,7 @@
 				B07337B4191626F5006FBFB9 /* meal4.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
+				B07337C619163CA9006FBFB9 /* photo4.png in Resources */,
 				B073379C1915ECA9006FBFB9 /* MealTableViewCell.xib in Resources */,
 				8CDF4DEC19161F4F008AF646 /* restaurant3@2x.png in Resources */,
 			);
@@ -546,7 +598,6 @@
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
 				B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */,
-				8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

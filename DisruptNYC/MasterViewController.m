@@ -159,4 +159,8 @@
     
 }
 
+- (IBAction)acceptOffer:(id)sender{
+    
+}
+
 @end
