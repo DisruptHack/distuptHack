@@ -7,6 +7,7 @@
 //
 
 #import "MerchantBidCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MerchantBidCell
 
@@ -14,7 +15,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+
     }
     return self;
 }

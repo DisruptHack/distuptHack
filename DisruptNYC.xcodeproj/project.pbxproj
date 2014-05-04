@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
+		8CDF4DAF1915E753008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
 		8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-invited-button@2x.png"; sourceTree = "<group>"; };
+		8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		8CF7BF79191584F50058F100 /* DisruptNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisruptNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF7BF7C191584F50058F100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CF7BF7E191584F50058F100 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +74,21 @@
 		8CF7BFBF1915A14D0058F100 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8CF7BFC11915A2330058F100 /* RequestForOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestForOfferViewController.h; sourceTree = "<group>"; };
 		8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestForOfferViewController.m; sourceTree = "<group>"; };
+		8CF7BFD71915CBDC0058F100 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8CF7BFF91915D7490058F100 /* american-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "american-button@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue slider bar@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-doubleslider@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-radius@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "double-slider-controller@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFE1915D7490058F100 /* grey bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey bar@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-cuisine-background@2x.png"; sourceTree = "<group>"; };
+		8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greybackground-doubleslider@2x.png"; sourceTree = "<group>"; };
+		8CF7C0011915D7490058F100 /* japanese-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "japanese-button@2x.png"; sourceTree = "<group>"; };
+		8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "large-grey-bckrnd@2x.png"; sourceTree = "<group>"; };
+		8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request-dinner-invitations-header@2x.png"; sourceTree = "<group>"; };
+		8CF7C0041915D7490058F100 /* seafood-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seafood-button@2x.png"; sourceTree = "<group>"; };
+		8CF7C0051915D7490058F100 /* tooltip-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tooltip-image@2x.png"; sourceTree = "<group>"; };
+		8CF7C0061915D7490058F100 /* wine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wine@2x.png"; sourceTree = "<group>"; };
 		B07337761915896B006FBFB9 /* IncomingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingRequest.h; sourceTree = "<group>"; };
 		B07337771915896B006FBFB9 /* IncomingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingRequest.m; sourceTree = "<group>"; };
 		B073377919158E89006FBFB9 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
@@ -77,7 +97,7 @@
 		B073377D19159242006FBFB9 /* OutgoingOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutgoingOffer.m; sourceTree = "<group>"; };
 		B073377F191596F3006FBFB9 /* MerchantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantViewController.h; sourceTree = "<group>"; };
 		B0733780191596F3006FBFB9 /* MerchantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantViewController.m; sourceTree = "<group>"; };
-		B0733781191596F3006FBFB9 /* MerchantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
+		B0733781191596F3006FBFB9 /* MerchantView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MerchantView~ipad.xib"; sourceTree = "<group>"; };
 		B073378419159F87006FBFB9 /* Merchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
 		B073378519159F87006FBFB9 /* Merchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
 		B0C8B9D01915BFF200F1C592 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
@@ -132,6 +152,7 @@
 		8CF7BF7B191584F50058F100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CF7BFD71915CBDC0058F100 /* QuartzCore.framework */,
 				8CF7BFBF1915A14D0058F100 /* MapKit.framework */,
 				8CF7BF7C191584F50058F100 /* Foundation.framework */,
 				8CF7BF7E191584F50058F100 /* CoreGraphics.framework */,
@@ -144,9 +165,13 @@
 		8CF7BF82191584F50058F100 /* DisruptNYC */ = {
 			isa = PBXGroup;
 			children = (
+				B073378D1915C885006FBFB9 /* iPad */,
 				8CF7BF8B191584F50058F100 /* AppDelegate.h */,
+				8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */,
+				8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */,
 				8CF7BF8C191584F50058F100 /* AppDelegate.m */,
 				8CF7BF8E191584F50058F100 /* Main.storyboard */,
+				8CF7BFD51915B64A0058F100 /* Assets */,
 				B073376F191588BD006FBFB9 /* Merchant */,
 				8CF7BFB41915879E0058F100 /* MerchantBidCell.h */,
 				8CF7BFB51915879E0058F100 /* MerchantBidCell.m */,
@@ -191,12 +216,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8CF7BFD51915B64A0058F100 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */,
+				8CF7BFF91915D7490058F100 /* american-button@2x.png */,
+				8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */,
+				8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */,
+				8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */,
+				8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */,
+				8CF7BFFE1915D7490058F100 /* grey bar@2x.png */,
+				8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */,
+				8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */,
+				8CF7C0011915D7490058F100 /* japanese-button@2x.png */,
+				8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */,
+				8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */,
+				8CF7C0041915D7490058F100 /* seafood-button@2x.png */,
+				8CF7C0051915D7490058F100 /* tooltip-image@2x.png */,
+				8CF7C0061915D7490058F100 /* wine@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		B073376F191588BD006FBFB9 /* Merchant */ = {
 			isa = PBXGroup;
 			children = (
+				B07337961915D178006FBFB9 /* Cell1.xib */,
+				B07337931915D11F006FBFB9 /* CellOwner.h */,
+				B07337901915D11F006FBFB9 /* CellOwner.m */,
+				B07337911915D11F006FBFB9 /* Cell1.h */,
+				B07337921915D11F006FBFB9 /* Cell1.m */,
 				B073377F191596F3006FBFB9 /* MerchantViewController.h */,
 				B0733780191596F3006FBFB9 /* MerchantViewController.m */,
-				B0733781191596F3006FBFB9 /* MerchantViewController.xib */,
+				B0733781191596F3006FBFB9 /* MerchantView~ipad.xib */,
+				B073378E1915C915006FBFB9 /* MerchantView~iphone.xib */,
 				B07337761915896B006FBFB9 /* IncomingRequest.h */,
 				B07337771915896B006FBFB9 /* IncomingRequest.m */,
 				B073377919158E89006FBFB9 /* Meal.h */,
@@ -294,9 +347,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF7C0091915D7490058F100 /* blue-doubleslider@2x.png in Resources */,
+				8CF7C00C1915D7490058F100 /* grey bar@2x.png in Resources */,
+				8CF7C00D1915D7490058F100 /* grey-cuisine-background@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
+				8CF7C0081915D7490058F100 /* blue slider bar@2x.png in Resources */,
+				8CF7C0101915D7490058F100 /* large-grey-bckrnd@2x.png in Resources */,
+				8CF7C0121915D7490058F100 /* seafood-button@2x.png in Resources */,
+				8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */,
+				8CF7C00A1915D7490058F100 /* circle-radius@2x.png in Resources */,
+				8CF7C00B1915D7490058F100 /* double-slider-controller@2x.png in Resources */,
+				8CF7C0111915D7490058F100 /* request-dinner-invitations-header@2x.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
+				8CF7C00E1915D7490058F100 /* greybackground-doubleslider@2x.png in Resources */,
+				8CF7C00F1915D7490058F100 /* japanese-button@2x.png in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
+				8CF7C0131915D7490058F100 /* tooltip-image@2x.png in Resources */,
+				8CF7C0071915D7490058F100 /* american-button@2x.png in Resources */,
+				8CF7C0141915D7490058F100 /* wine@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +459,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -409,6 +478,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5AB78446-0278-4A9D-8DF9-21934021937E";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -450,12 +520,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Emin Israfil (X2DL555UH7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
+				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -465,12 +537,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Emin Israfil (X2DL555UH7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
+				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

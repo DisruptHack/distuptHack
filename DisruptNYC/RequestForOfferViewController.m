@@ -7,6 +7,7 @@
 //
 
 #import "RequestForOfferViewController.h"
+#import "UIImage+animatedGIF.h"
 
 @interface RequestForOfferViewController ()
 
@@ -18,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -26,7 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //UIImage *animatedGif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://37.media.tumblr.com/tumblr_lx9qvrIYEx1qe5q3go1_500.gif"]];
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:animatedGif] forBarMetrics:UIBarMetricsDefault];
+
+    [self.distanceSlider setThumbImage:[UIImage imageNamed:@"circle-radius"] forState:UIControlStateNormal];
+    //[self.distanceSlider set]
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

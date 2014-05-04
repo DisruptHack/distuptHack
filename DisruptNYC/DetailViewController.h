@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic) id merchantBidOffer;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak) IBOutlet UILabel *mealDescription;
+@property (weak) IBOutlet UIImageView *backgroundImage;
+
 
 @end
