@@ -15,10 +15,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.expirationLabel.layer.shadowColor = [UIColor whiteColor].CGColor;
-        self.expirationLabel.layer.shadowRadius = 5.0;
-        self.expirationLabel.layer.shadowOpacity = 1;
-        self.expirationLabel.layer.shadowOffset = CGSizeMake(3, 3);
+
     }
     return self;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
 		8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7C191584F50058F100 /* Foundation.framework */; };
 		8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF7E191584F50058F100 /* CoreGraphics.framework */; };
 		8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BF80191584F50058F100 /* UIKit.framework */; };
@@ -29,23 +30,22 @@
 		8CF7BFD01915AE560058F100 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
 		8CF7BFD11915AE560058F100 /* RequestForOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */; };
 		8CF7BFD21915AE7E0058F100 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
-		8CF7BFD41915B6430058F100 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFD31915B6430058F100 /* test.png */; };
 		8CF7BFD81915CBDC0058F100 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFD71915CBDC0058F100 /* QuartzCore.framework */; };
 		8CF7BFDB1915D4630058F100 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFDA1915D4630058F100 /* UIImage+animatedGIF.m */; };
-		8CF7BFEB1915D6460058F100 /* american-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFDD1915D6460058F100 /* american-button.png */; };
-		8CF7BFEC1915D6460058F100 /* blue slider bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFDE1915D6460058F100 /* blue slider bar.png */; };
-		8CF7BFED1915D6460058F100 /* blue-doubleslider.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFDF1915D6460058F100 /* blue-doubleslider.png */; };
-		8CF7BFEE1915D6460058F100 /* circle-radius.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE01915D6460058F100 /* circle-radius.png */; };
-		8CF7BFEF1915D6460058F100 /* double-slider-controller.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE11915D6460058F100 /* double-slider-controller.png */; };
-		8CF7BFF01915D6460058F100 /* grey bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE21915D6460058F100 /* grey bar.png */; };
-		8CF7BFF11915D6460058F100 /* grey-cuisine-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE31915D6460058F100 /* grey-cuisine-background.png */; };
-		8CF7BFF21915D6460058F100 /* greybackground-doubleslider.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE41915D6460058F100 /* greybackground-doubleslider.png */; };
-		8CF7BFF31915D6460058F100 /* japanese-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE51915D6460058F100 /* japanese-button.png */; };
-		8CF7BFF41915D6460058F100 /* large-grey-bckrnd.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE61915D6460058F100 /* large-grey-bckrnd.png */; };
-		8CF7BFF51915D6460058F100 /* request-dinner-invitations-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE71915D6460058F100 /* request-dinner-invitations-header.png */; };
-		8CF7BFF61915D6460058F100 /* seafood-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE81915D6460058F100 /* seafood-button.png */; };
-		8CF7BFF71915D6460058F100 /* tooltip-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFE91915D6460058F100 /* tooltip-image.png */; };
-		8CF7BFF81915D6460058F100 /* wine.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFEA1915D6460058F100 /* wine.png */; };
+		8CF7C0071915D7490058F100 /* american-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFF91915D7490058F100 /* american-button@2x.png */; };
+		8CF7C0081915D7490058F100 /* blue slider bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */; };
+		8CF7C0091915D7490058F100 /* blue-doubleslider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */; };
+		8CF7C00A1915D7490058F100 /* circle-radius@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */; };
+		8CF7C00B1915D7490058F100 /* double-slider-controller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */; };
+		8CF7C00C1915D7490058F100 /* grey bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFFE1915D7490058F100 /* grey bar@2x.png */; };
+		8CF7C00D1915D7490058F100 /* grey-cuisine-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */; };
+		8CF7C00E1915D7490058F100 /* greybackground-doubleslider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */; };
+		8CF7C00F1915D7490058F100 /* japanese-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0011915D7490058F100 /* japanese-button@2x.png */; };
+		8CF7C0101915D7490058F100 /* large-grey-bckrnd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */; };
+		8CF7C0111915D7490058F100 /* request-dinner-invitations-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */; };
+		8CF7C0121915D7490058F100 /* seafood-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0041915D7490058F100 /* seafood-button@2x.png */; };
+		8CF7C0131915D7490058F100 /* tooltip-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0051915D7490058F100 /* tooltip-image@2x.png */; };
+		8CF7C0141915D7490058F100 /* wine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7C0061915D7490058F100 /* wine@2x.png */; };
 		B073378619159F87006FBFB9 /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B073378519159F87006FBFB9 /* Merchant.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-invited-button@2x.png"; sourceTree = "<group>"; };
 		8CF7BF79191584F50058F100 /* DisruptNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisruptNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF7BF7C191584F50058F100 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CF7BF7E191584F50058F100 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,24 +87,23 @@
 		8CF7BFBF1915A14D0058F100 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8CF7BFC11915A2330058F100 /* RequestForOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestForOfferViewController.h; sourceTree = "<group>"; };
 		8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestForOfferViewController.m; sourceTree = "<group>"; };
-		8CF7BFD31915B6430058F100 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		8CF7BFD71915CBDC0058F100 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8CF7BFD91915D4630058F100 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		8CF7BFDA1915D4630058F100 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
-		8CF7BFDD1915D6460058F100 /* american-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "american-button.png"; sourceTree = "<group>"; };
-		8CF7BFDE1915D6460058F100 /* blue slider bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue slider bar.png"; sourceTree = "<group>"; };
-		8CF7BFDF1915D6460058F100 /* blue-doubleslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-doubleslider.png"; sourceTree = "<group>"; };
-		8CF7BFE01915D6460058F100 /* circle-radius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-radius.png"; sourceTree = "<group>"; };
-		8CF7BFE11915D6460058F100 /* double-slider-controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "double-slider-controller.png"; sourceTree = "<group>"; };
-		8CF7BFE21915D6460058F100 /* grey bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey bar.png"; sourceTree = "<group>"; };
-		8CF7BFE31915D6460058F100 /* grey-cuisine-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-cuisine-background.png"; sourceTree = "<group>"; };
-		8CF7BFE41915D6460058F100 /* greybackground-doubleslider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greybackground-doubleslider.png"; sourceTree = "<group>"; };
-		8CF7BFE51915D6460058F100 /* japanese-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "japanese-button.png"; sourceTree = "<group>"; };
-		8CF7BFE61915D6460058F100 /* large-grey-bckrnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "large-grey-bckrnd.png"; sourceTree = "<group>"; };
-		8CF7BFE71915D6460058F100 /* request-dinner-invitations-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request-dinner-invitations-header.png"; sourceTree = "<group>"; };
-		8CF7BFE81915D6460058F100 /* seafood-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seafood-button.png"; sourceTree = "<group>"; };
-		8CF7BFE91915D6460058F100 /* tooltip-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tooltip-image.png"; sourceTree = "<group>"; };
-		8CF7BFEA1915D6460058F100 /* wine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wine.png; sourceTree = "<group>"; };
+		8CF7BFF91915D7490058F100 /* american-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "american-button@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue slider bar@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-doubleslider@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-radius@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "double-slider-controller@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFE1915D7490058F100 /* grey bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey bar@2x.png"; sourceTree = "<group>"; };
+		8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-cuisine-background@2x.png"; sourceTree = "<group>"; };
+		8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greybackground-doubleslider@2x.png"; sourceTree = "<group>"; };
+		8CF7C0011915D7490058F100 /* japanese-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "japanese-button@2x.png"; sourceTree = "<group>"; };
+		8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "large-grey-bckrnd@2x.png"; sourceTree = "<group>"; };
+		8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request-dinner-invitations-header@2x.png"; sourceTree = "<group>"; };
+		8CF7C0041915D7490058F100 /* seafood-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seafood-button@2x.png"; sourceTree = "<group>"; };
+		8CF7C0051915D7490058F100 /* tooltip-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tooltip-image@2x.png"; sourceTree = "<group>"; };
+		8CF7C0061915D7490058F100 /* wine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wine@2x.png"; sourceTree = "<group>"; };
 		B07337761915896B006FBFB9 /* IncomingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingRequest.h; sourceTree = "<group>"; };
 		B07337771915896B006FBFB9 /* IncomingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingRequest.m; sourceTree = "<group>"; };
 		B073377919158E89006FBFB9 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
@@ -231,21 +231,21 @@
 		8CF7BFD51915B64A0058F100 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8CF7BFDD1915D6460058F100 /* american-button.png */,
-				8CF7BFDE1915D6460058F100 /* blue slider bar.png */,
-				8CF7BFDF1915D6460058F100 /* blue-doubleslider.png */,
-				8CF7BFE01915D6460058F100 /* circle-radius.png */,
-				8CF7BFE11915D6460058F100 /* double-slider-controller.png */,
-				8CF7BFE21915D6460058F100 /* grey bar.png */,
-				8CF7BFE31915D6460058F100 /* grey-cuisine-background.png */,
-				8CF7BFE41915D6460058F100 /* greybackground-doubleslider.png */,
-				8CF7BFE51915D6460058F100 /* japanese-button.png */,
-				8CF7BFE61915D6460058F100 /* large-grey-bckrnd.png */,
-				8CF7BFE71915D6460058F100 /* request-dinner-invitations-header.png */,
-				8CF7BFE81915D6460058F100 /* seafood-button.png */,
-				8CF7BFE91915D6460058F100 /* tooltip-image.png */,
-				8CF7BFEA1915D6460058F100 /* wine.png */,
-				8CF7BFD31915B6430058F100 /* test.png */,
+				8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */,
+				8CF7BFF91915D7490058F100 /* american-button@2x.png */,
+				8CF7BFFA1915D7490058F100 /* blue slider bar@2x.png */,
+				8CF7BFFB1915D7490058F100 /* blue-doubleslider@2x.png */,
+				8CF7BFFC1915D7490058F100 /* circle-radius@2x.png */,
+				8CF7BFFD1915D7490058F100 /* double-slider-controller@2x.png */,
+				8CF7BFFE1915D7490058F100 /* grey bar@2x.png */,
+				8CF7BFFF1915D7490058F100 /* grey-cuisine-background@2x.png */,
+				8CF7C0001915D7490058F100 /* greybackground-doubleslider@2x.png */,
+				8CF7C0011915D7490058F100 /* japanese-button@2x.png */,
+				8CF7C0021915D7490058F100 /* large-grey-bckrnd@2x.png */,
+				8CF7C0031915D7490058F100 /* request-dinner-invitations-header@2x.png */,
+				8CF7C0041915D7490058F100 /* seafood-button@2x.png */,
+				8CF7C0051915D7490058F100 /* tooltip-image@2x.png */,
+				8CF7C0061915D7490058F100 /* wine@2x.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -360,24 +360,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7BFF21915D6460058F100 /* greybackground-doubleslider.png in Resources */,
-				8CF7BFEB1915D6460058F100 /* american-button.png in Resources */,
-				8CF7BFF81915D6460058F100 /* wine.png in Resources */,
-				8CF7BFF41915D6460058F100 /* large-grey-bckrnd.png in Resources */,
+				8CF7C0091915D7490058F100 /* blue-doubleslider@2x.png in Resources */,
+				8CF7C00C1915D7490058F100 /* grey bar@2x.png in Resources */,
+				8CF7C00D1915D7490058F100 /* grey-cuisine-background@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
-				8CF7BFF51915D6460058F100 /* request-dinner-invitations-header.png in Resources */,
-				8CF7BFF31915D6460058F100 /* japanese-button.png in Resources */,
-				8CF7BFEC1915D6460058F100 /* blue slider bar.png in Resources */,
-				8CF7BFEE1915D6460058F100 /* circle-radius.png in Resources */,
+				8CF7C0081915D7490058F100 /* blue slider bar@2x.png in Resources */,
+				8CF7C0101915D7490058F100 /* large-grey-bckrnd@2x.png in Resources */,
+				8CF7C0121915D7490058F100 /* seafood-button@2x.png in Resources */,
+				8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */,
+				8CF7C00A1915D7490058F100 /* circle-radius@2x.png in Resources */,
+				8CF7C00B1915D7490058F100 /* double-slider-controller@2x.png in Resources */,
+				8CF7C0111915D7490058F100 /* request-dinner-invitations-header@2x.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
-				8CF7BFF11915D6460058F100 /* grey-cuisine-background.png in Resources */,
-				8CF7BFF01915D6460058F100 /* grey bar.png in Resources */,
+				8CF7C00E1915D7490058F100 /* greybackground-doubleslider@2x.png in Resources */,
+				8CF7C00F1915D7490058F100 /* japanese-button@2x.png in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
-				8CF7BFEF1915D6460058F100 /* double-slider-controller.png in Resources */,
-				8CF7BFF71915D6460058F100 /* tooltip-image.png in Resources */,
-				8CF7BFED1915D6460058F100 /* blue-doubleslider.png in Resources */,
-				8CF7BFD41915B6430058F100 /* test.png in Resources */,
-				8CF7BFF61915D6460058F100 /* seafood-button.png in Resources */,
+				8CF7C0131915D7490058F100 /* tooltip-image@2x.png in Resources */,
+				8CF7C0071915D7490058F100 /* american-button@2x.png in Resources */,
+				8CF7C0141915D7490058F100 /* wine@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -491,6 +492,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5AB78446-0278-4A9D-8DF9-21934021937E";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -522,6 +524,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "5AB78446-0278-4A9D-8DF9-21934021937E";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -532,13 +535,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Emin Israfil (X2DL555UH7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
+				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -549,13 +552,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Emin Israfil (X2DL555UH7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D681E078-DF14-4AC4-8EDB-D3ECA54B6EA1";
+				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
