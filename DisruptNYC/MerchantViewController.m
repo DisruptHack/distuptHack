@@ -44,6 +44,10 @@
 - (IBAction)acceptRequest:(id)sender {
     
     NSLog(@"Accepted, Row %i", ((UIButton *)sender).tag);
+    //open meals view
+    mealsView = [[UIView alloc] initWithFrame:CGRectMake(30,30,260,260)];
+    mealsView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:mealsView];
     
 }
 
