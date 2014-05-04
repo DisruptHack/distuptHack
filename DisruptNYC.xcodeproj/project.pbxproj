@@ -484,6 +484,7 @@
 				8CDF4DB81915FB10008AF646 /* circle-radius@2x.png in Resources */,
 				8CDF4DB91915FB10008AF646 /* double-slider-controller@2x.png in Resources */,
 				8CDF4DCE19160E6D008AF646 /* city-image@2x.png in Resources */,
+				B07337B5191626F5006FBFB9 /* meal3.png in Resources */,
 				8CDF4DBA1915FB10008AF646 /* grey bar@2x.png in Resources */,
 				8CDF4DBB1915FB10008AF646 /* grey-cuisine-background@2x.png in Resources */,
 				8CDF4DBC1915FB10008AF646 /* greybackground-doubleslider@2x.png in Resources */,
