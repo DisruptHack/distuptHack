@@ -42,7 +42,7 @@
     //dummy arrays
     NSArray *samplePrices = [[NSArray alloc] initWithObjects:@"$75.00",@"$50.00",@"$75.00",@"$35.00", @"$75.00",@"$100.00",@"$75.00", nil];
     NSArray *sampleTimes = [[NSArray alloc] initWithObjects:@"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM", @"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM", nil];
-    NSArray *sampleNames = [[NSArray alloc] initWithObjects:@"Dennis M. Wright",@"Luis S. Alexander",@"Howard S. Beach",@"Sandra T. Tucker", @"Emily R. Miller",@"Gene L. Arnold",@"Tommie P. Valenzuela", nil];
+    NSArray *sampleNames = [[NSArray alloc] initWithObjects:@"User 34",@"Luis S. Alexander",@"Howard S. Beach",@"Sandra T. Tucker", @"Emily R. Miller",@"Gene L. Arnold",@"Tommie P. Valenzuela", nil];
     
     NSArray *sampleMealPrices = [[NSArray alloc] initWithObjects:@"$100.00",@"$75.00",@"$50.00",@"$35.00", nil];
     
@@ -102,7 +102,7 @@
     
     NSLog(@"Accepted, Row %i", ((UIButton *)sender).tag);
     //open meals view
-    mealsView = [[UIView alloc] initWithFrame:CGRectMake(30,30,260,260)];
+    mealsView = [[UIView alloc] initWithFrame:CGRectMake(30,50,260,260)];
     mealsView.backgroundColor = [UIColor lightGrayColor];
     mealsTableView = [[UITableView alloc] initWithFrame:CGRectMake(1,1,mealsView.frame.size.width-2, mealsView.frame.size.height-50)];
     mealsTableView.delegate = self;
