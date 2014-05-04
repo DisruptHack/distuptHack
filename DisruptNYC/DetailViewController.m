@@ -49,4 +49,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)acceptButton:(id)sender {
+    
+    [UIView animateWithDuration:1.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.confirmationMessage.alpha = .85;
+        self.confirmationMessageButton.alpha = .85;
+        self.confirmationMessageLabel.alpha = .85;
+    } completion:^(BOOL finished) {
+        self.confirmationMessage.alpha = .85;
+        self.confirmationMessageButton.alpha = .85;
+        self.confirmationMessageLabel.alpha = .85;
+    }];
+}
 @end
