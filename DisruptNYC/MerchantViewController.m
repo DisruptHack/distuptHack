@@ -123,10 +123,10 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     
-    if (peerStartedBrowsing == NO) {
-        [self startBrowsingForPeers];
-        peerStartedBrowsing = YES;
-    }
+//    if (peerStartedBrowsing == NO) {
+//        [self startBrowsingForPeers];
+//        peerStartedBrowsing = YES;
+//    }
 }
 
 - (IBAction)acceptRequest:(id)sender {
@@ -197,9 +197,21 @@
 
 -(void)refreshOffers{
     //TODO: make call to get list of offers with statuses
-    
-    
+    [self performSelector:@selector(changeRequestStatus) withObject:nil afterDelay:1.5];
 }
+
+-(void)changeRequestStatus {
+    for (int i=0; i<[requests count]; i++) {
+        OutgoingOffer *tempOffer = [[OutgoingOffer alloc] init];
+        tempOffer = [requests objectAtIndex:i];
+        if (tempOffer.status == 2) {
+            tempOffer.status = 1;
+        }
+    }
+    [offerTableView reloadData];
+
+}
+
 
 -(void)dismissMealsView {
     offerTableView.alpha = 1.0;
