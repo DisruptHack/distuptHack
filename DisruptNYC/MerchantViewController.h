@@ -17,6 +17,8 @@
     NSMutableArray *expiredOffers;
     NSMutableArray *rejectedOffers;
     CellOwner *cellOwner;
+    UITableView *mealsTableView;
+    UIView *mealsView;
 }
 
 @property (nonatomic, retain) NSMutableArray *incomingRequests;
