@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "IncomingRequest.h"
 
-@interface MerchantViewController : UIViewController {
+@interface MerchantViewController : UIViewController <UITableViewDelegate>{
     NSMutableArray *incomingRequests;
     NSMutableArray *acceptedOffers;
     NSMutableArray *pendingOffers;

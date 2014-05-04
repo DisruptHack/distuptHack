@@ -33,6 +33,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UITableView *offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(100,100,824,568)];
+    [self.view addSubview:offerTableView];
 }
 
 - (void)didReceiveMemoryWarning

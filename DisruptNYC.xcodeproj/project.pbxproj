@@ -23,12 +23,11 @@
 		8CF7BFA9191584F50058F100 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFA7191584F50058F100 /* InfoPlist.strings */; };
 		8CF7BFAB191584F50058F100 /* DisruptNYCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFAA191584F50058F100 /* DisruptNYCTests.m */; };
 		8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFB51915879E0058F100 /* MerchantBidCell.m */; };
-		B07337781915896B006FBFB9 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
-		B073377B19158E89006FBFB9 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
-		B073377E19159242006FBFB9 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
-		B0733782191596F3006FBFB9 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
-		B0733783191596F3006FBFB9 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0733781191596F3006FBFB9 /* MerchantViewController.xib */; };
 		B073378619159F87006FBFB9 /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = B073378519159F87006FBFB9 /* Merchant.m */; };
+		B07337871915BBDC006FBFB9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF7BFBF1915A14D0058F100 /* MapKit.framework */; };
+		B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7BFC21915A2330058F100 /* RequestForOfferViewController.m */; };
+		B07337891915BC0B006FBFB9 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
+		B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7BFC01915A14D0058F100 /* MapKit.framework in Frameworks */,
-				8CF7BFBE191599C60058F100 /* (null) in Frameworks */,
+				B07337871915BBDC006FBFB9 /* MapKit.framework in Frameworks */,
 				8CF7BF7F191584F50058F100 /* CoreGraphics.framework in Frameworks */,
 				8CF7BF81191584F50058F100 /* UIKit.framework in Frameworks */,
 				8CF7BF7D191584F50058F100 /* Foundation.framework in Frameworks */,
@@ -303,11 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF7BFC51915A6EE0058F100 /* MerchantViewController.m in Sources */,
-				8CF7BFC61915A6EE0058F100 /* MerchantViewController.xib in Sources */,
-				8CF7BFC81915A6EE0058F100 /* IncomingRequest.m in Sources */,
-				8CF7BFCA1915A6EE0058F100 /* Meal.m in Sources */,
-				8CF7BFCC1915A6EE0058F100 /* OutgoingOffer.m in Sources */,
+				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
+				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
+				B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */,
 				8CF7BFB61915879E0058F100 /* MerchantBidCell.m in Sources */,
 				8CF7BF8D191584F50058F100 /* AppDelegate.m in Sources */,
 				8CF7BF93191584F50058F100 /* MasterViewController.m in Sources */,
