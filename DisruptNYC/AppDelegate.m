@@ -14,7 +14,7 @@
 {
     // Override point for customization after application launch.
     
-    Connection* conn = [[Connection alloc]init];
+    Connection* conn = [Connection model];//[[Connection alloc]init];
     
     [conn testConnection];
     
