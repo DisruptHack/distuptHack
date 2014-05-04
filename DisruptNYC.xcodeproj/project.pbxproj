@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BCCDBC219162B09002916C6 /* UserP2PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDBC119162B09002916C6 /* UserP2PViewController.m */; };
+		7BCCDBC519162B15002916C6 /* MerchantP2PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */; };
 		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
 		8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
 		8CDF4DB41915FADC008AF646 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
@@ -64,6 +66,10 @@
 		B07337A91915F976006FBFB9 /* CellOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337A41915F976006FBFB9 /* CellOwner.m */; };
 		B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337AB19160AA5006FBFB9 /* OfferBuilderViewController.m */; };
 		B07337AE19160AA5006FBFB9 /* OfferBuilderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07337AC19160AA5006FBFB9 /* OfferBuilderView.xib */; };
+		B07337B4191626F5006FBFB9 /* meal4.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B0191626F5006FBFB9 /* meal4.png */; };
+		B07337B5191626F5006FBFB9 /* meal3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B1191626F5006FBFB9 /* meal3.png */; };
+		B07337B6191626F5006FBFB9 /* meal2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B2191626F5006FBFB9 /* meal2.png */; };
+		B07337B7191626F5006FBFB9 /* meal1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07337B3191626F5006FBFB9 /* meal1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7BCCDBC019162B09002916C6 /* UserP2PViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserP2PViewController.h; path = DisruptNYC/UserP2PViewController.h; sourceTree = "<group>"; };
+		7BCCDBC119162B09002916C6 /* UserP2PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserP2PViewController.m; path = DisruptNYC/UserP2PViewController.m; sourceTree = "<group>"; };
+		7BCCDBC319162B15002916C6 /* MerchantP2PViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MerchantP2PViewController.h; path = DisruptNYC/MerchantP2PViewController.h; sourceTree = "<group>"; };
+		7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MerchantP2PViewController.m; path = DisruptNYC/MerchantP2PViewController.m; sourceTree = "<group>"; };
 		8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-invited-button@2x.png"; sourceTree = "<group>"; };
 		8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
@@ -156,6 +166,10 @@
 		B07337AA19160AA5006FBFB9 /* OfferBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferBuilderViewController.h; sourceTree = "<group>"; };
 		B07337AB19160AA5006FBFB9 /* OfferBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferBuilderViewController.m; sourceTree = "<group>"; };
 		B07337AC19160AA5006FBFB9 /* OfferBuilderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferBuilderView.xib; sourceTree = "<group>"; };
+		B07337B0191626F5006FBFB9 /* meal4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal4.png; sourceTree = "<group>"; };
+		B07337B1191626F5006FBFB9 /* meal3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal3.png; sourceTree = "<group>"; };
+		B07337B2191626F5006FBFB9 /* meal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal2.png; sourceTree = "<group>"; };
+		B07337B3191626F5006FBFB9 /* meal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal1.png; sourceTree = "<group>"; };
 		B0C8B9D01915BFF200F1C592 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
 		B0C8B9D11915BFF200F1C592 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +199,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BCCDBBF19162989002916C6 /* P2P */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCDBC319162B15002916C6 /* MerchantP2PViewController.h */,
+				7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */,
+				7BCCDBC019162B09002916C6 /* UserP2PViewController.h */,
+				7BCCDBC119162B09002916C6 /* UserP2PViewController.m */,
+			);
+			name = P2P;
+			sourceTree = "<group>";
+		};
 		8CDF4DCA19160020008AF646 /* PopoverSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +236,7 @@
 		8CF7BF70191584F50058F100 = {
 			isa = PBXGroup;
 			children = (
+				7BCCDBBF19162989002916C6 /* P2P */,
 				B0C8B9CF1915BD4F00F1C592 /* APICalls */,
 				8CF7BF82191584F50058F100 /* DisruptNYC */,
 				8CF7BFA4191584F50058F100 /* DisruptNYCTests */,
@@ -324,6 +350,7 @@
 		B073376F191588BD006FBFB9 /* Merchant */ = {
 			isa = PBXGroup;
 			children = (
+				B07337AF191626DC006FBFB9 /* Meal Images */,
 				B07337A01915F976006FBFB9 /* Cell1.xib */,
 				B07337A11915F976006FBFB9 /* Cell1.h */,
 				B07337A21915F976006FBFB9 /* Cell1.m */,
@@ -349,6 +376,17 @@
 				B07337AC19160AA5006FBFB9 /* OfferBuilderView.xib */,
 			);
 			name = Merchant;
+			sourceTree = "<group>";
+		};
+		B07337AF191626DC006FBFB9 /* Meal Images */ = {
+			isa = PBXGroup;
+			children = (
+				B07337B0191626F5006FBFB9 /* meal4.png */,
+				B07337B1191626F5006FBFB9 /* meal3.png */,
+				B07337B2191626F5006FBFB9 /* meal2.png */,
+				B07337B3191626F5006FBFB9 /* meal1.png */,
+			);
+			name = "Meal Images";
 			sourceTree = "<group>";
 		};
 		B0C8B9CF1915BD4F00F1C592 /* APICalls */ = {
@@ -438,6 +476,7 @@
 			files = (
 				8CDF4DB51915FB10008AF646 /* american-button@2x.png in Resources */,
 				8CDF4DB61915FB10008AF646 /* blue slider bar@2x.png in Resources */,
+				B07337B7191626F5006FBFB9 /* meal1.png in Resources */,
 				8CDF4DB71915FB10008AF646 /* blue-doubleslider@2x.png in Resources */,
 				8CDF4DF019162CDE008AF646 /* Description + Menu (bottom part)@2x.png in Resources */,
 				B07337AE19160AA5006FBFB9 /* OfferBuilderView.xib in Resources */,
@@ -452,6 +491,7 @@
 				8CDF4DBE1915FB10008AF646 /* large-grey-bckrnd@2x.png in Resources */,
 				8CDF4DBF1915FB10008AF646 /* request-dinner-invitations-header@2x.png in Resources */,
 				8CDF4DC01915FB10008AF646 /* seafood-button@2x.png in Resources */,
+				B07337B6191626F5006FBFB9 /* meal2.png in Resources */,
 				8CDF4DC11915FB10008AF646 /* tooltip-image@2x.png in Resources */,
 				8CDF4DC21915FB10008AF646 /* wine@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,
@@ -462,6 +502,7 @@
 				8CDF4DEF19162CDE008AF646 /* Restaurant Single View@2x.png in Resources */,
 				8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */,
 				B07337A81915F976006FBFB9 /* MerchantView~iphone.xib in Resources */,
+				B07337B4191626F5006FBFB9 /* meal4.png in Resources */,
 				8CF7BF87191584F50058F100 /* InfoPlist.strings in Resources */,
 				8CF7BF90191584F50058F100 /* Main.storyboard in Resources */,
 				B073379C1915ECA9006FBFB9 /* MealTableViewCell.xib in Resources */,
@@ -487,10 +528,12 @@
 				8CDF4DCF191615B2008AF646 /* ANPopoverSlider.m in Sources */,
 				8CDF4DB41915FADC008AF646 /* Connection.m in Sources */,
 				B073379B1915ECA9006FBFB9 /* MealTableViewCell.m in Sources */,
+				7BCCDBC519162B15002916C6 /* MerchantP2PViewController.m in Sources */,
 				B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */,
 				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
 				B07337A91915F976006FBFB9 /* CellOwner.m in Sources */,
 				8CDF4DC91916000B008AF646 /* ANPopoverView.m in Sources */,
+				7BCCDBC219162B09002916C6 /* UserP2PViewController.m in Sources */,
 				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
 				B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */,
 				B07337A71915F976006FBFB9 /* Cell1.m in Sources */,
@@ -502,6 +545,7 @@
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
 				B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */,
+				8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,7 +676,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -649,7 +693,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DisruptNYC/DisruptNYC-Prefix.pch";
 				INFOPLIST_FILE = "DisruptNYC/DisruptNYC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6E82DDB5-DDFC-4E84-A458-A1CBC1DCEF63";
 				TARGETED_DEVICE_FAMILY = "1,2";

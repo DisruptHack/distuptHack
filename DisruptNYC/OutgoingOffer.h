@@ -13,19 +13,25 @@
 {
     NSString *offerId;
     NSString *mealDescription;
+    NSString *mealName;
     UIImage *offerImage;
     NSDate *offerExpirationDate;
-    NSDate *mealDate;
+    NSString *mealDate;
     NSString *associatedRequestId;
-    float *price;
+    int state; //1=Accepted 2=Pending 3=Accepted 4=Refused
+    NSString *price;
+    NSString *customerName;
 }
 
 @property (nonatomic, retain) NSString *offerId;
 @property (nonatomic, retain) NSString *mealDescription;
+@property (nonatomic, retain) NSString *mealName;
 @property (nonatomic, retain) UIImage *offerImage;
 @property (nonatomic, retain) NSDate *offerExpirationDate;
-@property (nonatomic, retain) NSDate *mealDate;
+@property (nonatomic, retain) NSString *mealDate;
 @property (nonatomic, retain) NSString *associatedRequestId;
-@property (nonatomic, assign) float *price;
+@property (nonatomic, retain) NSString *price;
+@property (nonatomic, retain) NSString *customerName;
+@property (nonatomic, assign) int state;
 
 @end

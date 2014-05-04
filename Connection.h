@@ -12,15 +12,19 @@
 {
     NSURLConnection* connect;
     NSJSONSerialization* jsonParser;
+    NSMutableDictionary* userProfile;
     
     
 }
 
 @property(nonatomic, retain)NSURLConnection* connect;
 @property(nonatomic, retain)NSJSONSerialization* jsonParser;
-
+@property(nonatomic, retain)NSMutableDictionary* userProfile;
 
 
 -(void)testConnection;
+
+-(NSNumber*)getOfferID:(NSMutableDictionary*)dict;
+
 
 @end

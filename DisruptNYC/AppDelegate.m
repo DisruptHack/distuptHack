@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Connection.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    Connection* conn = [[Connection alloc]init];
+    
+    [conn testConnection];
+    
     return YES;
 }
 							
