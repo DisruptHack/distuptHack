@@ -94,7 +94,7 @@
         [meals addObject:tempOffer];
     }
     
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor darkGrayColor];
     offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,40,320,488)];
     offerTableView.delegate = self;
     offerTableView.dataSource = self;
@@ -107,6 +107,7 @@
                action:@selector(gotoOfferBuilder)
      forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Edit Offers" forState:UIControlStateNormal];
+    button.tintColor = [UIColor whiteColor];
     button.frame = CGRectMake(40.0, 528, 100, 40.0);
     [self.view addSubview:button];
     
@@ -116,6 +117,7 @@
                action:@selector(refreshOffers)
      forControlEvents:UIControlEventTouchUpInside];
     [refreshButton setTitle:@"Refresh" forState:UIControlStateNormal];
+    refreshButton.tintColor = [UIColor whiteColor];
     refreshButton.frame = CGRectMake(190.0, 528, 100, 40.0);
     [self.view addSubview:refreshButton];
     
