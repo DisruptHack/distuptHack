@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MasterViewController.h"
 #import "MerchantBidCell.h"
+#import "MerchantViewController.h"
 
 #import "DetailViewController.h"
 
@@ -43,6 +44,7 @@
     [merchantOfferArray addObject:testOffer];
     [merchantOfferArray addObject:testOffer];
     [merchantOfferArray addObject:testOffer];
+    
 }
 
 -(NSInteger)getHoursTillExpiration:(NSDate *) expirationDate{
@@ -121,6 +123,14 @@
         NSDate *object = merchantOfferArray[indexPath.row];
         //[segue destinationViewController]setMerchantOfferLabel:object];
     }
+}
+
+
+- (IBAction)gotoMerchantView:(id)sender{
+    NSLog(@"launching merchant view");
+    MerchantViewController *dvController = [[MerchantViewController alloc] initWithNibName:@"MerchantView" bundle:nil];
+    [self presentViewController:dvController animated:YES completion:nil];
+    
 }
 
 @end
