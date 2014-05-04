@@ -461,6 +461,7 @@
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
 				B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */,
+				8CDF4DC81916000B008AF646 /* ANPopoverSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

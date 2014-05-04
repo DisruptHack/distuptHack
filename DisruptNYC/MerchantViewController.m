@@ -38,6 +38,31 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //dummy arrays
+    NSArray *samplePrices = [[NSArray alloc] initWithObjects:@"$75.00",@"$50.00",@"$75.00",@"$35.00", @"$75.00",@"$100.00",@"$75.00", nil];
+    NSArray *sampleTimes = [[NSArray alloc] initWithObjects:@"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM", @"Today 5:00PM",@"Today 5:00PM",@"Today 5:00PM", nil];
+    NSArray *sampleNames = [[NSArray alloc] initWithObjects:@"Dennis M. Wright",@"Luis S. Alexander",@"Howard S. Beach",@"Sandra T. Tucker", @"Emily R. Miller",@"Gene L. Arnold",@"Tommie P. Valenzuela", nil];
+    
+    NSArray *sampleMealPrices = [[NSArray alloc] initWithObjects:@"$100.00",@"$75.00",@"$50.00",@"$35.00", nil];
+    
+    NSArray *sampleMealNames = [[NSArray alloc] initWithObjects:@"Dinner,Wine, Dessert",@"App, Dinner, Dessert",@"App & Dinner",@"Dinner", nil];
+    
+    NSArray *sampleMealImages = [[NSArray alloc] initWithObjects:@"$75.00",@"$50.00",@"$75.00",@"$35.00", nil];
+
+
+
+    
+    requests = [[NSMutableArray alloc] init];
+    for (int i=0; i<[samplePrices count]; i++) {
+        OutgoingOffer *tempOffer = [[OutgoingOffer alloc] init];
+        tempOffer.price = [samplePrices objectAtIndex:i];
+        tempOffer.mealDate = [sampleTimes objectAtIndex:i];
+        tempOffer.customerName = [sampleNames objectAtIndex:i];
+        tempOffer.state = 0;
+        [requests addObject:tempOffer];
+    }
+    
     self.view.backgroundColor = [UIColor grayColor];
     UITableView *offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,40,320,488)];
     offerTableView.delegate = self;
@@ -98,7 +123,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 	//NSLog(@"rows in section);
-	return 10;
+	return [requests count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -128,6 +153,12 @@
         cell1.acceptButton.tag = row;
         [cell1.denyButton addTarget:self action:@selector(refuseRequest:) forControlEvents:UIControlEventTouchUpInside];
         cell1.denyButton.tag = row;
+        
+        OutgoingOffer *tempOffer = [requests objectAtIndex:row];
+        cell1.name.text = tempOffer.customerName;
+        cell1.price.text = tempOffer.price;
+        cell1.time.text = tempOffer.mealDate;
+        
 		cell = cell1;
     }
     if (tableView.tag == 2) {

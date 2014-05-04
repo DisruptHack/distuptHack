@@ -17,5 +17,7 @@
 @synthesize associatedRequestId;
 @synthesize mealDate;
 @synthesize price;
+@synthesize state;
+@synthesize customerName;
 
 @end

@@ -16,6 +16,7 @@
     NSMutableArray *pendingOffers;
     NSMutableArray *expiredOffers;
     NSMutableArray *rejectedOffers;
+    NSMutableArray *requests;
     CellOwner *cellOwner;
     UITableView *mealsTableView;
     UIView *mealsView;
