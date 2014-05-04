@@ -48,7 +48,6 @@
 		B07337891915BC0B006FBFB9 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
 		B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377D19159242006FBFB9 /* OutgoingOffer.m */; };
 		B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
-		B073378C1915C6B3006FBFB9 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
 		B073379B1915ECA9006FBFB9 /* MealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337991915ECA9006FBFB9 /* MealTableViewCell.m */; };
 		B073379C1915ECA9006FBFB9 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B073379A1915ECA9006FBFB9 /* MealTableViewCell.xib */; };
 		B07337A61915F976006FBFB9 /* Cell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07337A01915F976006FBFB9 /* Cell1.xib */; };
@@ -423,7 +422,6 @@
 				8CDF4DB41915FADC008AF646 /* Connection.m in Sources */,
 				B073379B1915ECA9006FBFB9 /* MealTableViewCell.m in Sources */,
 				B073378B1915C6B3006FBFB9 /* MerchantViewController.m in Sources */,
-				B073378C1915C6B3006FBFB9 /* IncomingRequest.m in Sources */,
 				B07337891915BC0B006FBFB9 /* Meal.m in Sources */,
 				B07337A91915F976006FBFB9 /* CellOwner.m in Sources */,
 				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
