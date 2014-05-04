@@ -7,6 +7,7 @@
 //
 #define kMerchantBidCellResuseIdentifier @"MerchantBidCell"
 
+#import <QuartzCore/QuartzCore.h>
 #import "MasterViewController.h"
 #import "MerchantBidCell.h"
 
@@ -31,7 +32,8 @@
     //test stuff - will be deleted
     merchantOfferArray = [[NSMutableArray alloc]init];
     OutgoingOffer *testOffer = [[OutgoingOffer alloc]init];
-    testOffer.offerExpirationDate = [NSDate new];
+    testOffer.offerExpirationDate = [NSDate date];
+
     testOffer.mealDescription = @"Many steaks";
     testOffer.offerImage = [UIImage imageNamed:@"test"];
     [merchantOfferArray addObject:testOffer];
@@ -42,20 +44,11 @@
     [merchantOfferArray addObject:testOffer];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)insertNewObject:(id)sender
-{
-    if (!merchantOfferArray) {
-        merchantOfferArray = [[NSMutableArray alloc] init];
-    }
-    [merchantOfferArray insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+-(NSInteger)getHoursTillExpiration:(NSDate *) expirationDate{
+    NSTimeInterval distanceBetweenDates = [expirationDate timeIntervalSinceDate:[NSDate date]];
+    double secondsInAnHour = 3600;
+    NSInteger hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
+    return  hoursBetweenDates;
 }
 
 #pragma mark - Table View
@@ -79,7 +72,27 @@
     
     bidCell.merchantOfferLabel.text = currentOffer.mealDescription;
     bidCell.merchantCellImage.image = currentOffer.offerImage;
-    bidCell.expirationLabel.text = [currentOffer.offerExpirationDate description];
+    NSString *dateString = [NSString stringWithFormat:@"%ldh", (long)[self getHoursTillExpiration:[NSDate dateWithTimeInterval:(60*60*5) sinceDate:[NSDate date]]]];
+    
+    bidCell.expirationLabel.text = dateString;
+    bidCell.expirationLabel.alpha =0;
+    
+    bidCell.merchantCellImage.layer.shadowColor = [UIColor blackColor].CGColor;
+    bidCell.merchantCellImage.layer.shadowRadius = 5.0;
+    bidCell.merchantCellImage.layer.shadowOpacity = 1;
+    bidCell.merchantCellImage.layer.shadowOffset = CGSizeMake(3, 3);
+    CGPathRef path = [UIBezierPath bezierPathWithRect:bidCell.merchantCellImage.bounds].CGPath;
+    bidCell.merchantCellImage.layer.shadowPath = path;
+    //bidCell.merchantCellImage.layer.shouldRasterize = YES;
+    
+    [UIView animateWithDuration:2.5
+                          delay:.75
+                        options:UIViewAnimationOptionCurveEaseOut animations:^{
+                            bidCell.expirationLabel.alpha =.75;
+                        } completion:^(BOOL finished) {
+                            bidCell.expirationLabel.alpha =.75;
+                        }];
+
     return bidCell;
 }
 
