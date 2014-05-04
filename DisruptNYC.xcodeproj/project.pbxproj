@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7BCCDBC219162B09002916C6 /* UserP2PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDBC119162B09002916C6 /* UserP2PViewController.m */; };
 		7BCCDBC519162B15002916C6 /* MerchantP2PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */; };
+		8C57771219166AB6003E0A7C /* button 2 highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C57771019166AB6003E0A7C /* button 2 highlight@2x.png */; };
+		8C57771319166AB6003E0A7C /* button 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C57771119166AB6003E0A7C /* button 2@2x.png */; };
 		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
 		8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
 		8CDF4DB41915FADC008AF646 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
@@ -100,6 +102,8 @@
 		7BCCDBC119162B09002916C6 /* UserP2PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserP2PViewController.m; path = DisruptNYC/UserP2PViewController.m; sourceTree = "<group>"; };
 		7BCCDBC319162B15002916C6 /* MerchantP2PViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MerchantP2PViewController.h; path = DisruptNYC/MerchantP2PViewController.h; sourceTree = "<group>"; };
 		7BCCDBC419162B15002916C6 /* MerchantP2PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MerchantP2PViewController.m; path = DisruptNYC/MerchantP2PViewController.m; sourceTree = "<group>"; };
+		8C57771019166AB6003E0A7C /* button 2 highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 2 highlight@2x.png"; sourceTree = "<group>"; };
+		8C57771119166AB6003E0A7C /* button 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button 2@2x.png"; sourceTree = "<group>"; };
 		8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-invited-button@2x.png"; sourceTree = "<group>"; };
 		8CDF4DAD1915E753008AF646 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
@@ -379,6 +383,8 @@
 		8CF7BFD51915B64A0058F100 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8C57771019166AB6003E0A7C /* button 2 highlight@2x.png */,
+				8C57771119166AB6003E0A7C /* button 2@2x.png */,
 				8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */,
 				8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */,
 				8CDF4DF4191637CB008AF646 /* 02_food@2x.png */,
@@ -569,10 +575,12 @@
 				8CDF4DBD1915FB10008AF646 /* japanese-button@2x.png in Resources */,
 				8CDF4DBE1915FB10008AF646 /* large-grey-bckrnd@2x.png in Resources */,
 				8CDF4DBF1915FB10008AF646 /* request-dinner-invitations-header@2x.png in Resources */,
+				8C57771319166AB6003E0A7C /* button 2@2x.png in Resources */,
 				8CDF4E02191637CB008AF646 /* 02_time@2x.png in Resources */,
 				8CDF4DC01915FB10008AF646 /* seafood-button@2x.png in Resources */,
 				B07337CB191640B3006FBFB9 /* carrot.png in Resources */,
 				B07337B6191626F5006FBFB9 /* meal2.png in Resources */,
+				8C57771219166AB6003E0A7C /* button 2 highlight@2x.png in Resources */,
 				8CDF4DC11915FB10008AF646 /* tooltip-image@2x.png in Resources */,
 				8CDF4DC21915FB10008AF646 /* wine@2x.png in Resources */,
 				8CF7BF98191584F50058F100 /* Images.xcassets in Resources */,

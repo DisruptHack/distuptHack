@@ -15,6 +15,10 @@
 
 @property (weak) IBOutlet UILabel *mealDescription;
 @property (weak) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UIView *confirmationMessage;
+- (IBAction)acceptButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *confirmationMessageButton;
+@property (weak, nonatomic) IBOutlet UILabel *confirmationMessageLabel;
 
 
 @end

@@ -244,11 +244,52 @@
                                 <rect key="frame" x="0.0" y="362" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkf-cN-aLJ">
+                                <rect key="frame" x="225" y="323" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="accept.png" backgroundImage="accept.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptButton:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="LH9-1Z-AYr"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-Gs-9ZA">
+                                <rect key="frame" x="0.0" y="355" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASp-vB-dyJ">
+                                <rect key="frame" x="58" y="100" width="214" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVr-s0-Ck1">
+                                        <rect key="frame" x="61" y="30" width="93" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <state key="normal" image="button 2.png" backgroundImage="button 2 highlight.png">
+                                            <color key="titleColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Offer Accepted!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-pK-vu8">
+                                        <rect key="frame" x="20" y="144" width="174" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.81464419157608692" green="0.81464419157608692" blue="0.81464419157608692" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cra-N8-TIN"/>
                     <connections>
+                        <outlet property="confirmationMessage" destination="ASp-vB-dyJ" id="KXh-Aq-V1O"/>
+                        <outlet property="confirmationMessageButton" destination="OVr-s0-Ck1" id="HvD-WM-h3x"/>
+                        <outlet property="confirmationMessageLabel" destination="Nci-pK-vu8" id="Zfo-5S-vOY"/>
                         <outlet property="mealDescription" destination="cGV-sZ-M5M" id="P4f-YX-46R"/>
                     </connections>
                 </viewController>
@@ -282,6 +323,8 @@
         <image name="Restaurant Single View.png" width="320" height="308"/>
         <image name="accept.png" width="89" height="30"/>
         <image name="american-button.png" width="64" height="64"/>
+        <image name="button 2 highlight.png" width="48" height="48"/>
+        <image name="button 2.png" width="96" height="96"/>
         <image name="city-image.png" width="320" height="568"/>
         <image name="grey-cuisine-background.png" width="315" height="97"/>
         <image name="japanese-button.png" width="64" height="64"/>
