@@ -53,6 +53,7 @@ static Connection *sharedPayModel = nil;
     connect = [[NSURLConnection alloc]init];
     jsonParser = [[NSJSONSerialization alloc]init];
     self.finishedRequest = NO;
+    userSend = [[UserP2PViewController alloc]init];
 }
 
 -(void)setupConnectionToServer
@@ -196,6 +197,10 @@ static Connection *sharedPayModel = nil;
     }
     else {
         self.finishedRequest = YES;
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"TestNotification"
+         object:self];
+        
         NSLog(@"Array: %@", jsonArray);
     }
     
@@ -221,6 +226,7 @@ static Connection *sharedPayModel = nil;
 }
 
 
+
 -(NSNumber*)getOfferID:(NSMutableDictionary*)dict
 {
     NSDictionary* userDict = [dict objectForKey:@"acceptOffer"];
@@ -232,6 +238,16 @@ static Connection *sharedPayModel = nil;
 //- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 //- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    
+}
+
+-(void)sendUserRequestToMerchant
+{
+    
+}
+
+-(void)sendMerchantRequestToUser
 {
     
 }

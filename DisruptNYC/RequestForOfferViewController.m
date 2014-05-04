@@ -8,6 +8,7 @@
 
 #import "RequestForOfferViewController.h"
 #import "UIImage+animatedGIF.h"
+#import "Connection.h"
 
 @interface RequestForOfferViewController ()
 
@@ -29,13 +30,26 @@
     [super viewDidLoad];
     //UIImage *animatedGif = [UIImage animatedImageWithAnimatedGIFURL:[NSURL URLWithString:@"http://37.media.tumblr.com/tumblr_lx9qvrIYEx1qe5q3go1_500.gif"]];
     //[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:animatedGif] forBarMetrics:UIBarMetricsDefault];
-
+    Connection* con = [Connection model];
+    BOOL b = con.finishedRequest;
+    
+    
     [self.distanceSlider setThumbImage:[UIImage imageNamed:@"circle-radius"] forState:UIControlStateNormal];
     [self.distanceSlider  setMinimumTrackImage:[[UIImage imageNamed:@"blue slider bar"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal];
     [self.distanceSlider  setMaximumTrackImage:[[UIImage imageNamed:@"blue slider bar"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal];
     //[self.distanceSlider set]
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification:)
+                                                 name:@"TestNotification"
+                                               object:nil];
+
+    
+    
 }
 
 
@@ -56,5 +70,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) receiveTestNotification:(NSNotification *) notification
+{
+    // [notification name] should always be @"TestNotification"
+    // unless you use this method for observation of other notifications
+    // as well.
+    
+    if ([[notification name] isEqualToString:@"TestNotification"])
+        NSLog (@"Successfully received the test notification!");
+}
+
 
 @end

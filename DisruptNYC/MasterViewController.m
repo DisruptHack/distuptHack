@@ -12,6 +12,7 @@
 #import "MasterViewController.h"
 #import "MerchantBidCell.h"
 #import "MerchantViewController.h"
+#import "Connection.h"
 
 #import "DetailViewController.h"
 
@@ -19,9 +20,25 @@
 @interface MasterViewController () {
     NSMutableArray *merchantOfferArray;
 }
+-(NSString *)stringForPeerConnectionState:(MCSessionState)state;
+-(void) startAdvertising;
+
+
 @end
 
 @implementation MasterViewController
+{
+    
+        
+        MCPeerID *_peerID;
+        MCSession *_mcSession;
+        MCAdvertiserAssistant *_mcAdvertiserAssistant;
+        UIButton *_startAdvertisingButonControl;
+        UITextView *_merchantRepliesTextView;
+        NSMutableArray* peers;
+    
+
+}
 
 - (void)awakeFromNib
 {
@@ -32,6 +49,18 @@
 {
     [super viewDidLoad];
 
+    _peerID = [[MCPeerID alloc] initWithDisplayName:@"Rene Saroza"];
+    _mcSession = [[MCSession alloc] initWithPeer:_peerID];
+    _mcSession.delegate = self;
+    _mcAdvertiserAssistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"service" discoveryInfo:nil session:_mcSession];
+
+    peers = [[NSMutableArray alloc] init];
+
+    [self startAdvertising];
+    
+    
+//    Connection* con = [Connection model];
+//    BOOL b = con.finishedRequest;
     merchantOfferArray = [[NSMutableArray alloc]init];
     [self populateWithFakeData];
     
@@ -156,7 +185,97 @@
 }
 
 - (IBAction)acceptOffer:(id)sender{
+    NSLog(@"pressed button");
     
 }
+
+
+// Override this method to handle changes to peer session state
+- (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state
+{
+    
+    NSLog(@"Peer [%@] changed state to %@", peerID.displayName, [self stringForPeerConnectionState:state]);
+    /*
+     switch (state)
+     {
+     case MCSessionStateConnected:
+     //[_mcAdvertiserAssistant stop];
+     case MCSessionStateConnecting:
+     
+     case MCSessionStateNotConnected:
+     ;
+     //[_mcAdvertiserAssistant start];
+     
+     }
+     
+     */
+    
+}
+
+// MCSession Delegate callback when receiving data from a peer in a given session
+- (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
+{
+    NSString *messageFromMerchant = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    NSLog(@" Received data [%@]from peer %@ ", messageFromMerchant, peerID.displayName);
+    //_merchantRepliesTextView.text = data.description;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _merchantRepliesTextView.text = messageFromMerchant;
+    });
+}
+
+// MCSession delegate callback when we start to receive a resource from a peer in a given session
+- (void)session:(MCSession *)session didStartReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID withProgress:(NSProgress *)progress
+{
+    NSLog(@"Start receiving resource [%@] from peer %@ with progress [%@]", resourceName, peerID.displayName, progress);
+    
+}
+
+// MCSession delegate callback when a incoming resource transfer ends (possibly with error)
+- (void)session:(MCSession *)session didFinishReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID atURL:(NSURL *)localURL withError:(NSError *)error
+{
+    
+    
+}
+
+// Streaming API not utilized in this sample code
+- (void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID
+{
+    NSLog(@"Received data over stream with name %@ from peer %@", streamName, peerID.displayName);
+}
+
+
+// Helper method for human readable printing of MCSessionState.  This state is per peer.
+- (NSString *)stringForPeerConnectionState:(MCSessionState)state
+{
+    switch (state)
+    {
+        case MCSessionStateConnected:
+            return @"Connected";
+            
+        case MCSessionStateConnecting:
+            return @"Connecting";
+            
+        case MCSessionStateNotConnected:
+            return @"Not Connected";
+    }
+}
+
+-(void) startAdvertising
+{
+    
+    NSLog(@"Peer with id %@ started advertizing ... ", _peerID.displayName);
+    [_mcAdvertiserAssistant start];
+}
+
+-(void) sendData
+{
+    NSString* offers = @"lalalal";
+    
+    NSLog(@"Sending data %@", offers);
+    NSError *error = [[NSError alloc] init];
+    [_mcSession sendData:[offers dataUsingEncoding:NSASCIIStringEncoding] toPeers:peers withMode:MCSessionSendDataReliable error:&error];
+}
+
 
 @end

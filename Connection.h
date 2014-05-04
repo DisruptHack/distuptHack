@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MerchantP2PViewController.h"
+#import "UserP2PViewController.h"
 
 @interface Connection : NSObject < NSURLConnectionDelegate>
 {
@@ -15,6 +17,8 @@
     NSMutableDictionary* userProfile;
     NSString* limit;
     BOOL finishedRequest;
+    UserP2PViewController* userSend;
+    MerchantP2PViewController* merchantSend;
     
     
 }
@@ -26,6 +30,8 @@
 @property(nonatomic, retain)NSString* name;
 @property(nonatomic, retain)NSString* reportDate;
 @property(nonatomic, assign)BOOL finishedRequest;
+@property(nonatomic, retain)UserP2PViewController* userSend;
+@property(nonatomic, retain)MerchantP2PViewController* merchantSend;
 
 + (Connection*)model;
 
