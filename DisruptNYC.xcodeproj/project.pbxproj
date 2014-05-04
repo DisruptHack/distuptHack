@@ -10,7 +10,6 @@
 		8CDF4DAC1915DE45008AF646 /* get-invited-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAB1915DE45008AF646 /* get-invited-button@2x.png */; };
 		8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF4DAE1915E753008AF646 /* UIImage+animatedGIF.m */; };
 		8CDF4DB11915F225008AF646 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0733780191596F3006FBFB9 /* MerchantViewController.m */; };
-		8CDF4DB21915F232008AF646 /* IncomingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337771915896B006FBFB9 /* IncomingRequest.m */; };
 		8CDF4DB31915F232008AF646 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = B073377A19158E89006FBFB9 /* Meal.m */; };
 		8CDF4DB41915FADC008AF646 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C8B9D11915BFF200F1C592 /* Connection.m */; };
 		8CDF4DB51915FB10008AF646 /* american-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7BFF91915D7490058F100 /* american-button@2x.png */; };
@@ -430,7 +429,6 @@
 				B073378A1915BC0B006FBFB9 /* OutgoingOffer.m in Sources */,
 				B07337881915BBEC006FBFB9 /* RequestForOfferViewController.m in Sources */,
 				B07337A71915F976006FBFB9 /* Cell1.m in Sources */,
-				8CDF4DB21915F232008AF646 /* IncomingRequest.m in Sources */,
 				8CDF4DB31915F232008AF646 /* Meal.m in Sources */,
 				8CDF4DB11915F225008AF646 /* MerchantViewController.m in Sources */,
 				8CDF4DB01915F21B008AF646 /* UIImage+animatedGIF.m in Sources */,
