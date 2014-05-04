@@ -41,6 +41,9 @@
                         <state key="normal" title="Select">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="sendOffer:" destination="-2" eventType="touchUpInside" id="aSG-fB-rRH"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>

@@ -75,7 +75,7 @@
     }
     
     self.view.backgroundColor = [UIColor grayColor];
-    UITableView *offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,40,320,488)];
+    offerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,40,320,488)];
     offerTableView.delegate = self;
     offerTableView.dataSource = self;
     offerTableView.tag = 1;
@@ -106,6 +106,11 @@
     
     NSLog(@"Accepted, Row %i", ((UIButton *)sender).tag);
     //open meals view
+    offerTableView.alpha = 0.2;
+    offerTableView.backgroundColor = [UIColor blackColor];
+    offerTableView.userInteractionEnabled = NO;
+    
+    offerIndex = ((UIButton *)sender).tag;
     mealsView = [[UIView alloc] initWithFrame:CGRectMake(30,50,260,260)];
     mealsView.backgroundColor = [UIColor lightGrayColor];
     mealsTableView = [[UITableView alloc] initWithFrame:CGRectMake(1,1,mealsView.frame.size.width-2, mealsView.frame.size.height-50)];
@@ -118,22 +123,46 @@
                action:@selector(dismissMealsView)
      forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Cancel" forState:UIControlStateNormal];
-    button.frame = CGRectMake(40.0, mealsView.frame.size.height-45, 100, 40.0);
+    button.frame = CGRectMake(10.0, mealsView.frame.size.height-45, 70, 40.0);
     [mealsView addSubview:button];
     [self.view addSubview:mealsView];
+    
+    
+    
+    
+    
     
 }
 
 - (IBAction)refuseRequest:(id)sender {
-    NSLog(@"Refused, Row %i", ((UIButton *)sender).tag);
+    NSLog(@"Refused, Row %li", (long)((UIButton *)sender).tag);
     
 }
 
+-(IBAction)sendOffer:(id)sender {
+    NSLog(@"send offer");
+    //test update status
+    OutgoingOffer *tempOffer = [requests objectAtIndex:offerIndex];
+    tempOffer.status = 2;
+    [offerTableView reloadData];
+    [self dismissMealsView];
+    
+    //TODO: Send offer acceptance to user
+}
+
+
+
 -(void)refreshOffers{
+    //TODO: make call to get list of offers with statuses
+    
     
 }
 
 -(void)dismissMealsView {
+    offerTableView.alpha = 1.0;
+    offerTableView.backgroundColor = [UIColor whiteColor];
+    offerTableView.userInteractionEnabled = YES;
+
     [mealsView removeFromSuperview];
 }
 
@@ -160,7 +189,7 @@
 {
 	
 	NSUInteger row = [indexPath row];
-	NSLog(@"Setting up cell %i", row);
+	//NSLog(@"Setting up cell %i", row);
 		
 	
 	//NSLog(@"aNewslink.linkTitle is %@", aNewsLink.linkTitle);
@@ -195,10 +224,17 @@
         }
         if (tempOffer.status == 1) {
             cell1.statusLabel.hidden = NO;
-            cell1.statusLabel.backgroundColor = [UIColor greenColor];
+            cell1.statusLabel.backgroundColor = [UIColor colorWithRed:.223 green:.710 blue:.290 alpha:1.0];
             cell1.statusLabel.textColor = [UIColor whiteColor];
             cell1.statusLabel.text = @"ACCEPTED";
         }
+        if (tempOffer.status == 2) {
+            cell1.statusLabel.hidden = NO;
+            cell1.statusLabel.backgroundColor = [UIColor colorWithRed:1.0 green:.729 blue:.004 alpha:1.0];
+            cell1.statusLabel.textColor = [UIColor whiteColor];
+            cell1.statusLabel.text = @"PENDING";
+        }
+
         
 		cell = cell1;
     }

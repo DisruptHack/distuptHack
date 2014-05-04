@@ -20,7 +20,9 @@
     NSMutableArray *meals;
     CellOwner *cellOwner;
     UITableView *mealsTableView;
+    UITableView *offerTableView;
     UIView *mealsView;
+    int offerIndex;
 }
 
 @property (nonatomic, retain) NSMutableArray *incomingRequests;
