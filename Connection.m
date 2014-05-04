@@ -20,16 +20,39 @@
 //#define inteneryURL  @"https://www.concursolutions.com/api/travel/trip/v1.1/"
 #define employeeForm @"https://www.concursolutions.com/api/user/v1.0/FormFields"
 #define accountDetails @"https://www.concursolutions.com/api/expense/expensereport/v2.0/Reports/?loginid=user34@concurdisrupt.com"
+
+
+static Connection *sharedPayModel = nil;
+
+
 @implementation Connection
+
+
++ (Connection*)model {
+    if (sharedPayModel == nil) {
+        sharedPayModel = [[super allocWithZone:NULL] init];
+        [self initialize];
+    }
+	
+    return sharedPayModel;
+}
+
 
 @synthesize connect;
 @synthesize jsonParser;
 @synthesize userProfile;
+@synthesize limit;
+@synthesize name;
+@synthesize reportDate;
+@synthesize finishedRequest;
+
+
 
 -(void)initialize
 {
     connect = [[NSURLConnection alloc]init];
     jsonParser = [[NSJSONSerialization alloc]init];
+    self.finishedRequest = NO;
 }
 
 -(void)setupConnectionToServer
@@ -58,8 +81,8 @@
     
     NSString* lala = @"https://www.concursolutions.com/api/v3.0/expense/reportdigests/87D66ED18B8E40EE8011";
     NSString* idItenary = @"https://www.concursolutions.com/api/travel/trip/v1.1/nHysU$p8YFtPNbhQHivBHdQSABqk7FrfnTAXy1SQ";
-    [self getRequestFromURLForUser:idItenary];
-    [self acceptMealOffer];
+    [self getRequestFromURLForUser:accountDetails];
+    //[self acceptMealOffer];
     
     
    // [self sendRequestToURL:url];
@@ -73,36 +96,6 @@
     
     return reportDetails;
 }
-
-//-(void)tryThis
-//{
-//    NSString* url = @"https://www.concursolutions.com/api/v3.0/expense/reportdigests";
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
-//
-//    
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//        if (!data) {
-//            NSLog(@"%s: sendAynchronousRequest error: %@", __FUNCTION__, connectionError);
-//            return;
-//        } else if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
-//            NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
-//            if (statusCode != 200) {
-//                NSLog(@"%s: sendAsynchronousRequest status code != 200: response = %@", __FUNCTION__, response);
-//                return;
-//            }
-//        }
-//        
-//        NSError *parseError = nil;
-//        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
-//        if (!dictionary) {
-//            NSLog(@"%s: JSONObjectWithData error: %@; data = %@", __FUNCTION__, parseError, [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-//            return
-//        }
-//        
-//        // now you can use your `dictionary` object
-//    }];
-//
-//}
 
 -(void)sendRequestToURL:(NSString*)url
 {
@@ -135,7 +128,7 @@
     NSMutableDictionary* suppressionUserProfile = [[NSMutableDictionary alloc]init];
     [suppressionUserProfile setObject:uProfile forKey:@"acceptOffer"];
     
-    [self getOfferID:suppressionUserProfile];
+    //[self getOfferID:suppressionUserProfile];
     
     
     return uProfile;
@@ -197,11 +190,12 @@
     
     NSError *error = nil;
     NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-   // [self setLimitAmount:jsonArray];
+    [self setLimitAmount:jsonArray];
     if (error != nil) {
         NSLog(@"Error parsing JSON.");
     }
     else {
+        self.finishedRequest = YES;
         NSLog(@"Array: %@", jsonArray);
     }
     
@@ -212,13 +206,17 @@
 
 -(void)setLimitAmount:(NSArray*)expenseAccount
 {
-    //NSMutableDictionary* dict = [[NSMutableDictionary alloc]init];
-    //[dict setObject:<#(id)#> forKey:<#(id<NSCopying>)#>]
+   
     
     NSDictionary* expense = [expenseAccount objectAtIndex:0];
-    NSDictionary* limit = [expense objectForKey:@"ReportTotal"];
-    NSDictionary* name = [expense objectForKey:@"EmployeeName"];
-    NSDictionary* reportDate = [expense objectForKey:@"ReportDate"];
+    NSString* mLimit = [expense objectForKey:@"ReportTotal"];
+    NSString* mName = [expense objectForKey:@"EmployeeName"];
+    NSString* mReportDate = [expense objectForKey:@"ReportDate"];
+    
+    self.limit = mLimit;
+    self.name = mName;
+    self.reportDate = mReportDate;
+    
     return;
 }
 
