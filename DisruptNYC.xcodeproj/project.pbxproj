@@ -52,6 +52,8 @@
 		B07337A71915F976006FBFB9 /* Cell1.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337A21915F976006FBFB9 /* Cell1.m */; };
 		B07337A81915F976006FBFB9 /* MerchantView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07337A31915F976006FBFB9 /* MerchantView~iphone.xib */; };
 		B07337A91915F976006FBFB9 /* CellOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337A41915F976006FBFB9 /* CellOwner.m */; };
+		B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07337AB19160AA5006FBFB9 /* OfferBuilderViewController.m */; };
+		B07337AE19160AA5006FBFB9 /* OfferBuilderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07337AC19160AA5006FBFB9 /* OfferBuilderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,9 @@
 		B07337A31915F976006FBFB9 /* MerchantView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MerchantView~iphone.xib"; sourceTree = "<group>"; };
 		B07337A41915F976006FBFB9 /* CellOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellOwner.m; sourceTree = "<group>"; };
 		B07337A51915F976006FBFB9 /* CellOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOwner.h; sourceTree = "<group>"; };
+		B07337AA19160AA5006FBFB9 /* OfferBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferBuilderViewController.h; sourceTree = "<group>"; };
+		B07337AB19160AA5006FBFB9 /* OfferBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferBuilderViewController.m; sourceTree = "<group>"; };
+		B07337AC19160AA5006FBFB9 /* OfferBuilderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferBuilderView.xib; sourceTree = "<group>"; };
 		B0C8B9D01915BFF200F1C592 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
 		B0C8B9D11915BFF200F1C592 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -289,6 +294,9 @@
 				B07337981915ECA9006FBFB9 /* MealTableViewCell.h */,
 				B07337991915ECA9006FBFB9 /* MealTableViewCell.m */,
 				B073379A1915ECA9006FBFB9 /* MealTableViewCell.xib */,
+				B07337AA19160AA5006FBFB9 /* OfferBuilderViewController.h */,
+				B07337AB19160AA5006FBFB9 /* OfferBuilderViewController.m */,
+				B07337AC19160AA5006FBFB9 /* OfferBuilderView.xib */,
 			);
 			name = Merchant;
 			sourceTree = "<group>";
@@ -381,6 +389,7 @@
 				8CDF4DB51915FB10008AF646 /* american-button@2x.png in Resources */,
 				8CDF4DB61915FB10008AF646 /* blue slider bar@2x.png in Resources */,
 				8CDF4DB71915FB10008AF646 /* blue-doubleslider@2x.png in Resources */,
+				B07337AE19160AA5006FBFB9 /* OfferBuilderView.xib in Resources */,
 				8CDF4DB81915FB10008AF646 /* circle-radius@2x.png in Resources */,
 				8CDF4DB91915FB10008AF646 /* double-slider-controller@2x.png in Resources */,
 				8CDF4DBA1915FB10008AF646 /* grey bar@2x.png in Resources */,
@@ -432,6 +441,7 @@
 				8CF7BF89191584F50058F100 /* main.m in Sources */,
 				8CF7BF96191584F50058F100 /* DetailViewController.m in Sources */,
 				B073378619159F87006FBFB9 /* Merchant.m in Sources */,
+				B07337AD19160AA5006FBFB9 /* OfferBuilderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

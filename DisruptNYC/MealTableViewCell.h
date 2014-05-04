@@ -10,8 +10,14 @@
 
 @interface MealTableViewCell : UITableViewCell {
     UILabel *title;
-    UIImage *mealImage;
+    UIImageView *mealImageView;
     UILabel *price;
+    UIButton *selectButton;
 }
+@property (nonatomic, retain) IBOutlet UILabel *title;
+@property (nonatomic, retain) IBOutlet UIImageView *mealImageView;
+@property (nonatomic, retain) IBOutlet UILabel *price;
+@property (nonatomic, retain) IBOutlet UIButton *selectButton;
+
 
 @end

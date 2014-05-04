@@ -10,9 +10,17 @@
 
 @implementation MealTableViewCell
 
-- (void)awakeFromNib
-{
-    // Initialization code
+@synthesize title;
+@synthesize mealImageView;
+@synthesize price;
+@synthesize selectButton;
+
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        // Initialization code
+    }
+    return self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
