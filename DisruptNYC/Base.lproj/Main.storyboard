@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="city-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vkz-yY-fyA">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="-13" y="5" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost: $70" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-Tc-4Ao">
@@ -123,22 +123,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0 Meters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-eg-ABI">
-                                <rect key="frame" x="119" y="440" width="82" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="grey-cuisine-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="RQp-zY-qQn">
-                                <rect key="frame" x="2" y="363" width="315" height="97"/>
+                                <rect key="frame" x="2" y="354" width="315" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="american-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="hIB-jp-4Uq">
-                                <rect key="frame" x="164" y="385" width="64" height="64"/>
+                                <rect key="frame" x="164" y="382" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="japanese-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="RoB-qb-bKz">
-                                <rect key="frame" x="14" y="385" width="64" height="64"/>
+                                <rect key="frame" x="14" y="382" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="large-grey-bckrnd.png" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-wd-b2S">
@@ -150,11 +144,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="wine.png" translatesAutoresizingMaskIntoConstraints="NO" id="jww-HV-p5v">
-                                <rect key="frame" x="92" y="385" width="64" height="64"/>
+                                <rect key="frame" x="92" y="382" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="seafood-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-FS-Wyz">
-                                <rect key="frame" x="243" y="385" width="64" height="64"/>
+                                <rect key="frame" x="243" y="382" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-bC-RQz" customClass="ANPopoverSlider">
@@ -162,9 +156,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBR-6s-Kmg">
-                                <rect key="frame" x="1" y="491" width="318" height="58"/>
+                                <rect key="frame" x="0.0" y="463" width="318" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="get-invited-button.png">
+                                <state key="normal" image="02_get_invited.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -179,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuisine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-bB-OUg">
-                                <rect key="frame" x="14" y="363" width="70" height="21"/>
+                                <rect key="frame" x="14" y="360" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -283,12 +277,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="02_get_invited.png" width="320" height="104"/>
         <image name="Description + Menu (bottom part).png" width="320" height="206"/>
         <image name="Restaurant Single View.png" width="320" height="308"/>
         <image name="accept.png" width="89" height="30"/>
         <image name="american-button.png" width="64" height="64"/>
         <image name="city-image.png" width="320" height="568"/>
-        <image name="get-invited-button.png" width="318" height="53"/>
         <image name="grey-cuisine-background.png" width="315" height="97"/>
         <image name="japanese-button.png" width="64" height="64"/>
         <image name="large-grey-bckrnd.png" width="317" height="232"/>

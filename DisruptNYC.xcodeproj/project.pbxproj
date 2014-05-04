@@ -40,7 +40,6 @@
 		8CDF4DFB191637CB008AF646 /* 02_distance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */; };
 		8CDF4DFC191637CB008AF646 /* 02_dividers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */; };
 		8CDF4DFD191637CB008AF646 /* 02_food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF4191637CB008AF646 /* 02_food@2x.png */; };
-		8CDF4DFE191637CB008AF646 /* 02_get invited_tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF5191637CB008AF646 /* 02_get invited_tap@2x.png */; };
 		8CDF4DFF191637CB008AF646 /* 02_get_invited@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF6191637CB008AF646 /* 02_get_invited@2x.png */; };
 		8CDF4E00191637CB008AF646 /* 02_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF7191637CB008AF646 /* 02_header@2x.png */; };
 		8CDF4E01191637CB008AF646 /* 02_set location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CDF4DF8191637CB008AF646 /* 02_set location@2x.png */; };
@@ -119,7 +118,6 @@
 		8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_distance@2x.png"; sourceTree = "<group>"; };
 		8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_dividers@2x.png"; sourceTree = "<group>"; };
 		8CDF4DF4191637CB008AF646 /* 02_food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_food@2x.png"; sourceTree = "<group>"; };
-		8CDF4DF5191637CB008AF646 /* 02_get invited_tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_get invited_tap@2x.png"; sourceTree = "<group>"; };
 		8CDF4DF6191637CB008AF646 /* 02_get_invited@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_get_invited@2x.png"; sourceTree = "<group>"; };
 		8CDF4DF7191637CB008AF646 /* 02_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_header@2x.png"; sourceTree = "<group>"; };
 		8CDF4DF8191637CB008AF646 /* 02_set location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02_set location@2x.png"; sourceTree = "<group>"; };
@@ -384,7 +382,6 @@
 				8CDF4DF2191637CB008AF646 /* 02_distance@2x.png */,
 				8CDF4DF3191637CB008AF646 /* 02_dividers@2x.png */,
 				8CDF4DF4191637CB008AF646 /* 02_food@2x.png */,
-				8CDF4DF5191637CB008AF646 /* 02_get invited_tap@2x.png */,
 				8CDF4DF6191637CB008AF646 /* 02_get_invited@2x.png */,
 				8CDF4DF7191637CB008AF646 /* 02_header@2x.png */,
 				8CDF4DF8191637CB008AF646 /* 02_set location@2x.png */,
@@ -561,7 +558,6 @@
 				8CDF4DEA19161F4F008AF646 /* restaurant2@2x.png in Resources */,
 				8CDF4DB81915FB10008AF646 /* circle-radius@2x.png in Resources */,
 				8CDF4DB91915FB10008AF646 /* double-slider-controller@2x.png in Resources */,
-				8CDF4DFE191637CB008AF646 /* 02_get invited_tap@2x.png in Resources */,
 				8CDF4DCE19160E6D008AF646 /* city-image@2x.png in Resources */,
 				8CDF4E03191637CB008AF646 /* bg@2x.png in Resources */,
 				B07337B5191626F5006FBFB9 /* meal3.png in Resources */,
