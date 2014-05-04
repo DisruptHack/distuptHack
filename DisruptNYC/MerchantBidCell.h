@@ -12,7 +12,9 @@
 
 @property (weak) IBOutlet UIImageView *merchantCellImage;
 @property (weak) IBOutlet UILabel *merchantOfferLabel;
+
 @property (weak) IBOutlet UIImageView *merchantYelpRatingImage;
 @property (weak) IBOutlet UILabel *expirationLabel;
+@property (weak, nonatomic) IBOutlet UIView *merchantOfferLabelBackground;
 
 @end

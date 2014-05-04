@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MerchantBidCell" rowHeight="150" id="uIC-Nu-RX0" customClass="MerchantBidCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="150"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uIC-Nu-RX0" id="7YL-4o-8aT">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
@@ -24,12 +24,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 steaks and unlimited beer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVM-8c-sVx">
-                                            <rect key="frame" x="0.0" y="107" width="320" height="29"/>
+                                        <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKm-J7-3IR">
+                                            <rect key="frame" x="0.0" y="101" width="320" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 steaks and unlimited beer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVM-8c-sVx">
+                                            <rect key="frame" x="4" y="101" width="216" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1hr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuE-e9-NpN">
@@ -40,12 +45,20 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-M9-iq4">
+                                            <rect key="frame" x="228" y="106" width="90" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="accept.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="expirationLabel" destination="RuE-e9-NpN" id="cE1-2G-tni"/>
                                     <outlet property="merchantCellImage" destination="LfG-60-kwu" id="OoI-ZI-y89"/>
                                     <outlet property="merchantOfferLabel" destination="dVM-8c-sVx" id="Gdn-71-zal"/>
+                                    <outlet property="merchantOfferLabelBackground" destination="MKm-J7-3IR" id="mMf-WN-7bI"/>
                                     <segue destination="Ah7-4n-0Wa" kind="push" id="ugC-Tp-7R5"/>
                                 </connections>
                             </tableViewCell>
@@ -56,13 +69,13 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List of Offers" id="tQt-TN-PWz">
+                    <navigationItem key="navigationItem" title="New York City" id="tQt-TN-PWz">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="a18-6U-egu">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dn5-wI-Df2">
+                            <button key="customView" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dn5-wI-Df2">
                                 <rect key="frame" x="16" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -70,7 +83,8 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="9ql-Ux-fgR">
+                        <barButtonItem key="rightBarButtonItem" id="9ql-Ux-fgR">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="PWi-SI-Yst" kind="push" id="p6l-Lj-aor"/>
                             </connections>
@@ -96,10 +110,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bh4-1R-oSQ">
-                                <rect key="frame" x="1" y="552" width="320" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </mapView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="city-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vkz-yY-fyA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost: $70" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-Tc-4Ao">
                                 <rect key="frame" x="123" y="179" width="75" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,7 +159,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBR-6s-Kmg">
-                                <rect key="frame" x="2" y="491" width="318" height="58"/>
+                                <rect key="frame" x="1" y="491" width="318" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="get-invited-button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -177,17 +191,14 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnb-dc-Nkl">
                                 <rect key="frame" x="25" y="161" width="68" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufS-dU-xqF">
-                                <rect key="frame" x="27" y="259" width="68" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.20392156859999999" green="0.66666666669999997" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-L8-tzj">
+                                <rect key="frame" x="25" y="264" width="279" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -195,8 +206,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="UnZ-kB-2GH"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="distanceSlider" destination="4WZ-bC-RQz" id="S4R-Ld-Muq"/>
-                        <outlet property="mapView" destination="bh4-1R-oSQ" id="nvj-kP-RQF"/>
+                        <outlet property="distanceSlider" destination="4WZ-bC-RQz" id="Ju4-Eu-YUV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTr-UH-YIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,22 +225,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbp-nm-Pi0">
-                                <rect key="frame" x="0.0" y="288" width="320" height="280"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meal Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-sZ-M5M">
                                 <rect key="frame" x="31" y="129" width="241" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Restaurant Single View.png" translatesAutoresizingMaskIntoConstraints="NO" id="LYc-mm-SUv">
+                                <rect key="frame" x="0.0" y="47" width="320" height="308"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Description + Menu (bottom part).png" translatesAutoresizingMaskIntoConstraints="NO" id="gCL-GG-YWV">
+                                <rect key="frame" x="0.0" y="362" width="320" height="206"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Offer Detail" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" id="cra-N8-TIN"/>
                     <connections>
-                        <outlet property="backgroundImage" destination="nbp-nm-Pi0" id="qmF-XJ-UCe"/>
                         <outlet property="mealDescription" destination="cGV-sZ-M5M" id="P4f-YX-46R"/>
                     </connections>
                 </viewController>
@@ -259,13 +272,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Description + Menu (bottom part).png" width="320" height="206"/>
+        <image name="Restaurant Single View.png" width="320" height="308"/>
+        <image name="accept.png" width="89" height="30"/>
         <image name="american-button.png" width="64" height="64"/>
+        <image name="city-image.png" width="320" height="568"/>
         <image name="get-invited-button.png" width="318" height="53"/>
         <image name="grey-cuisine-background.png" width="315" height="97"/>
         <image name="japanese-button.png" width="64" height="64"/>
         <image name="large-grey-bckrnd.png" width="317" height="232"/>
         <image name="request-dinner-invitations-header.png" width="320" height="71"/>
         <image name="seafood-button.png" width="64" height="64"/>
+        <image name="time.png" width="279" height="66"/>
         <image name="wine.png" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
